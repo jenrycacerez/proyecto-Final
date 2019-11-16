@@ -24,8 +24,7 @@ namespace ProyectoFinal_Jenry.Entidades
         public decimal Costo { get; set; }
         public decimal Ganancia { get; set; }
         public decimal ITBIS { get; set; }
-        public DateTime Vencimiento { get; set; }
-        [Browsable(false)]
+      
         public int UsuarioId { get; set; }
 
 
@@ -43,7 +42,7 @@ namespace ProyectoFinal_Jenry.Entidades
             Costo = 0;
             Ganancia = 0;
             ITBIS = 0;
-            Vencimiento = DateTime.Now;
+           
             UsuarioId = 0;
         }
     }
