@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal_Jenry.UI.Registros
 {
-    public partial class Articulos : Form
+    public partial class rArticulo : Form
     {
-        public Articulos()
+        public rArticulo()
         {
             InitializeComponent();
         }
