@@ -12,9 +12,15 @@ namespace ProyectoFinal_Jenry.UI.Consultas
 {
     public partial class cClientes : Form
     {
+        
         public cClientes()
         {
             InitializeComponent();
+        }
+
+        private void Buscarbutton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
