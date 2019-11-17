@@ -155,6 +155,9 @@
     <EmbeddedResource Include="UI\Consultas\cUsuarios.resx">
       <DependentUpon>cUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\cVentas.resx">
+      <DependentUpon>cVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rArticulo.resx">
       <DependentUpon>rArticulo.cs</DependentUpon>
     </EmbeddedResource>
