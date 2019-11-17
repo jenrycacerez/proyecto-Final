@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rProveedor));
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.TlfmaskedTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -80,47 +81,61 @@
             this.TlfmaskedTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TlfmaskedTextBox.Mask = "(999) 000-0000";
             this.TlfmaskedTextBox.Name = "TlfmaskedTextBox";
-            this.TlfmaskedTextBox.Size = new System.Drawing.Size(236, 26);
+            this.TlfmaskedTextBox.Size = new System.Drawing.Size(287, 26);
             this.TlfmaskedTextBox.TabIndex = 44;
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
             this.Buscarbutton.Location = new System.Drawing.Point(346, 51);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(68, 58);
             this.Buscarbutton.TabIndex = 43;
-            this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.UseVisualStyleBackColor = false;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // Eliminarbutton
             // 
-            this.Eliminarbutton.Location = new System.Drawing.Point(377, 472);
+            this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
+            this.Eliminarbutton.Location = new System.Drawing.Point(346, 472);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(88, 91);
+            this.Eliminarbutton.Size = new System.Drawing.Size(119, 91);
             this.Eliminarbutton.TabIndex = 42;
-            this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Eliminarbutton.UseVisualStyleBackColor = false;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.Location = new System.Drawing.Point(38, 472);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(88, 91);
+            this.Nuevobutton.Size = new System.Drawing.Size(124, 91);
             this.Nuevobutton.TabIndex = 41;
-            this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Nuevobutton.UseVisualStyleBackColor = false;
             this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Guardarbutton
             // 
-            this.Guardarbutton.Location = new System.Drawing.Point(223, 472);
+            this.Guardarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.Location = new System.Drawing.Point(190, 472);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(88, 91);
+            this.Guardarbutton.Size = new System.Drawing.Size(118, 91);
             this.Guardarbutton.TabIndex = 40;
-            this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Guardarbutton.UseVisualStyleBackColor = false;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // DirecciontextBox
@@ -128,7 +143,7 @@
             this.DirecciontextBox.Location = new System.Drawing.Point(178, 363);
             this.DirecciontextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DirecciontextBox.Name = "DirecciontextBox";
-            this.DirecciontextBox.Size = new System.Drawing.Size(236, 26);
+            this.DirecciontextBox.Size = new System.Drawing.Size(287, 26);
             this.DirecciontextBox.TabIndex = 39;
             // 
             // EmailtextBox
@@ -136,7 +151,7 @@
             this.EmailtextBox.Location = new System.Drawing.Point(178, 262);
             this.EmailtextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EmailtextBox.Name = "EmailtextBox";
-            this.EmailtextBox.Size = new System.Drawing.Size(236, 26);
+            this.EmailtextBox.Size = new System.Drawing.Size(287, 26);
             this.EmailtextBox.TabIndex = 38;
             // 
             // ContactotextBox
@@ -144,7 +159,7 @@
             this.ContactotextBox.Location = new System.Drawing.Point(178, 210);
             this.ContactotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ContactotextBox.Name = "ContactotextBox";
-            this.ContactotextBox.Size = new System.Drawing.Size(236, 26);
+            this.ContactotextBox.Size = new System.Drawing.Size(287, 26);
             this.ContactotextBox.TabIndex = 37;
             // 
             // NombrestextBox
@@ -152,7 +167,7 @@
             this.NombrestextBox.Location = new System.Drawing.Point(178, 165);
             this.NombrestextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NombrestextBox.Name = "NombrestextBox";
-            this.NombrestextBox.Size = new System.Drawing.Size(236, 26);
+            this.NombrestextBox.Size = new System.Drawing.Size(287, 26);
             this.NombrestextBox.TabIndex = 36;
             // 
             // IDnumericUpDown
@@ -236,7 +251,7 @@
             // 
             this.RnctextBox.Location = new System.Drawing.Point(178, 409);
             this.RnctextBox.Name = "RnctextBox";
-            this.RnctextBox.Size = new System.Drawing.Size(236, 26);
+            this.RnctextBox.Size = new System.Drawing.Size(287, 26);
             this.RnctextBox.TabIndex = 48;
             // 
             // MyErrorProvider
@@ -247,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 577);
+            this.ClientSize = new System.Drawing.Size(519, 612);
             this.Controls.Add(this.RnctextBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.FechadateTimePicker);
