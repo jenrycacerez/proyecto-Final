@@ -36,6 +36,11 @@
             this.registrosClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colsultasDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasDeArticulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +71,12 @@
             // 
             // consultasToolStripMenuItem
             // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colsultasDeVentasToolStripMenuItem,
+            this.consultasToolStripMenuItem1,
+            this.consultasDeProveedoresToolStripMenuItem,
+            this.consultasDeClientesToolStripMenuItem,
+            this.consultasDeArticulosToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.consultasToolStripMenuItem.Text = "Consultas";
@@ -75,6 +86,7 @@
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            this.ventasToolStripMenuItem.Click += new System.EventHandler(this.VentasToolStripMenuItem_Click);
             // 
             // registrosArticulosToolStripMenuItem
             // 
@@ -95,12 +107,49 @@
             this.registroProveedorToolStripMenuItem.Name = "registroProveedorToolStripMenuItem";
             this.registroProveedorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registroProveedorToolStripMenuItem.Text = "Registro Proveedor";
+            this.registroProveedorToolStripMenuItem.Click += new System.EventHandler(this.RegistroProveedorToolStripMenuItem_Click);
             // 
             // registroUsuarioToolStripMenuItem
             // 
             this.registroUsuarioToolStripMenuItem.Name = "registroUsuarioToolStripMenuItem";
             this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
+            this.registroUsuarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroUsuarioToolStripMenuItem_Click);
+            // 
+            // colsultasDeVentasToolStripMenuItem
+            // 
+            this.colsultasDeVentasToolStripMenuItem.Name = "colsultasDeVentasToolStripMenuItem";
+            this.colsultasDeVentasToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
+            this.colsultasDeVentasToolStripMenuItem.Text = "Consultas De Ventas";
+            this.colsultasDeVentasToolStripMenuItem.Click += new System.EventHandler(this.ColsultasDeVentasToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem1
+            // 
+            this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(322, 34);
+            this.consultasToolStripMenuItem1.Text = "Consultas  De Usuarios";
+            this.consultasToolStripMenuItem1.Click += new System.EventHandler(this.ConsultasToolStripMenuItem1_Click);
+            // 
+            // consultasDeProveedoresToolStripMenuItem
+            // 
+            this.consultasDeProveedoresToolStripMenuItem.Name = "consultasDeProveedoresToolStripMenuItem";
+            this.consultasDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
+            this.consultasDeProveedoresToolStripMenuItem.Text = "Consultas De Proveedores";
+            this.consultasDeProveedoresToolStripMenuItem.Click += new System.EventHandler(this.ConsultasDeProveedoresToolStripMenuItem_Click);
+            // 
+            // consultasDeClientesToolStripMenuItem
+            // 
+            this.consultasDeClientesToolStripMenuItem.Name = "consultasDeClientesToolStripMenuItem";
+            this.consultasDeClientesToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
+            this.consultasDeClientesToolStripMenuItem.Text = "Consultas De Clientes";
+            this.consultasDeClientesToolStripMenuItem.Click += new System.EventHandler(this.ConsultasDeClientesToolStripMenuItem_Click);
+            // 
+            // consultasDeArticulosToolStripMenuItem
+            // 
+            this.consultasDeArticulosToolStripMenuItem.Name = "consultasDeArticulosToolStripMenuItem";
+            this.consultasDeArticulosToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
+            this.consultasDeArticulosToolStripMenuItem.Text = "Consultas De Articulos";
+            this.consultasDeArticulosToolStripMenuItem.Click += new System.EventHandler(this.ConsultasDeArticulosToolStripMenuItem_Click);
             // 
             // MenuForm
             // 
@@ -128,6 +177,11 @@
         private System.Windows.Forms.ToolStripMenuItem registroUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colsultasDeVentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultasDeProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasDeClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasDeArticulosToolStripMenuItem;
     }
 }
 
