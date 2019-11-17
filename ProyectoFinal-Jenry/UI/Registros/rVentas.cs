@@ -16,5 +16,10 @@ namespace ProyectoFinal_Jenry.UI.Registros
         {
             InitializeComponent();
         }
+
+        private void DetalledataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
