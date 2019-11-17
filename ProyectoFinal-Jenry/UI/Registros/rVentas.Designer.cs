@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rVentas));
             this.DetalledataGridView = new System.Windows.Forms.DataGridView();
             this.ModocomboBox = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,7 @@
             this.DisponiblestextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.PreciotextBox = new System.Windows.Forms.TextBox();
-            this.Productobutton = new System.Windows.Forms.Button();
+            this.Articulobutton = new System.Windows.Forms.Button();
             this.ProductocomboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,10 +59,13 @@
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
+            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // DetalledataGridView
@@ -113,10 +117,11 @@
             this.Clientebutton.Location = new System.Drawing.Point(611, 100);
             this.Clientebutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Clientebutton.Name = "Clientebutton";
-            this.Clientebutton.Size = new System.Drawing.Size(93, 35);
+            this.Clientebutton.Size = new System.Drawing.Size(93, 32);
             this.Clientebutton.TabIndex = 59;
             this.Clientebutton.Text = "+";
             this.Clientebutton.UseVisualStyleBackColor = false;
+            this.Clientebutton.Click += new System.EventHandler(this.Clientebutton_Click);
             // 
             // ClientecomboBox
             // 
@@ -191,6 +196,7 @@
             this.Addbutton.TabIndex = 52;
             this.Addbutton.Text = "   + AGREGAR";
             this.Addbutton.UseVisualStyleBackColor = false;
+            this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
             // 
             // Removerbutton
             // 
@@ -207,6 +213,7 @@
             this.Removerbutton.TabIndex = 51;
             this.Removerbutton.Text = "- REMOVER FILA";
             this.Removerbutton.UseVisualStyleBackColor = false;
+            this.Removerbutton.Click += new System.EventHandler(this.Removerbutton_Click);
             // 
             // Buscarbutton
             // 
@@ -218,6 +225,7 @@
             this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
             this.Buscarbutton.TabIndex = 50;
             this.Buscarbutton.UseVisualStyleBackColor = false;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // CantidadnumericUpDown
             // 
@@ -280,19 +288,20 @@
             this.PreciotextBox.Size = new System.Drawing.Size(549, 26);
             this.PreciotextBox.TabIndex = 45;
             // 
-            // Productobutton
+            // Articulobutton
             // 
-            this.Productobutton.BackColor = System.Drawing.Color.Teal;
-            this.Productobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Productobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Productobutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Productobutton.Location = new System.Drawing.Point(611, 164);
-            this.Productobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Productobutton.Name = "Productobutton";
-            this.Productobutton.Size = new System.Drawing.Size(93, 35);
-            this.Productobutton.TabIndex = 44;
-            this.Productobutton.Text = "+";
-            this.Productobutton.UseVisualStyleBackColor = false;
+            this.Articulobutton.BackColor = System.Drawing.Color.Teal;
+            this.Articulobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Articulobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Articulobutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Articulobutton.Location = new System.Drawing.Point(611, 164);
+            this.Articulobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Articulobutton.Name = "Articulobutton";
+            this.Articulobutton.Size = new System.Drawing.Size(93, 28);
+            this.Articulobutton.TabIndex = 44;
+            this.Articulobutton.Text = "+";
+            this.Articulobutton.UseVisualStyleBackColor = false;
+            this.Articulobutton.Click += new System.EventHandler(this.Articulobutton_Click);
             // 
             // ProductocomboBox
             // 
@@ -303,6 +312,7 @@
             this.ProductocomboBox.Name = "ProductocomboBox";
             this.ProductocomboBox.Size = new System.Drawing.Size(448, 28);
             this.ProductocomboBox.TabIndex = 43;
+            this.ProductocomboBox.SelectedIndexChanged += new System.EventHandler(this.ProductocomboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -373,6 +383,7 @@
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Nuevobutton.UseVisualStyleBackColor = false;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // Eliminarbutton
             // 
@@ -386,6 +397,7 @@
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Eliminarbutton.UseVisualStyleBackColor = false;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Guardarbutton
             // 
@@ -399,12 +411,27 @@
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Guardarbutton.UseVisualStyleBackColor = false;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            // 
+            // FechadateTimePicker
+            // 
+            this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechadateTimePicker.Location = new System.Drawing.Point(504, 35);
+            this.FechadateTimePicker.Name = "FechadateTimePicker";
+            this.FechadateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.FechadateTimePicker.TabIndex = 69;
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 904);
+            this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Nuevobutton);
@@ -428,7 +455,7 @@
             this.Controls.Add(this.DisponiblestextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PreciotextBox);
-            this.Controls.Add(this.Productobutton);
+            this.Controls.Add(this.Articulobutton);
             this.Controls.Add(this.ProductocomboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -439,6 +466,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,7 +492,7 @@
         private System.Windows.Forms.TextBox DisponiblestextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox PreciotextBox;
-        private System.Windows.Forms.Button Productobutton;
+        private System.Windows.Forms.Button Articulobutton;
         private System.Windows.Forms.ComboBox ProductocomboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -475,5 +503,7 @@
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Guardarbutton;
+        private System.Windows.Forms.DateTimePicker FechadateTimePicker;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }
