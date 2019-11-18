@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.usuarioTextBox = new System.Windows.Forms.TextBox();
             this.clavetexbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,14 +38,14 @@
             // 
             // usuarioTextBox
             // 
-            this.usuarioTextBox.Location = new System.Drawing.Point(60, 173);
+            this.usuarioTextBox.Location = new System.Drawing.Point(60, 252);
             this.usuarioTextBox.Name = "usuarioTextBox";
             this.usuarioTextBox.Size = new System.Drawing.Size(248, 26);
             this.usuarioTextBox.TabIndex = 0;
             // 
             // clavetexbox
             // 
-            this.clavetexbox.Location = new System.Drawing.Point(51, 243);
+            this.clavetexbox.Location = new System.Drawing.Point(60, 318);
             this.clavetexbox.Name = "clavetexbox";
             this.clavetexbox.Size = new System.Drawing.Size(248, 26);
             this.clavetexbox.TabIndex = 1;
@@ -53,7 +54,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 132);
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(56, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 2;
@@ -62,7 +64,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 220);
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(56, 295);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 3;
@@ -70,11 +73,12 @@
             // 
             // Aceptarbutton
             // 
-            this.Aceptarbutton.Location = new System.Drawing.Point(131, 362);
+            this.Aceptarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
+            this.Aceptarbutton.Location = new System.Drawing.Point(83, 364);
             this.Aceptarbutton.Name = "Aceptarbutton";
-            this.Aceptarbutton.Size = new System.Drawing.Size(129, 51);
+            this.Aceptarbutton.Size = new System.Drawing.Size(209, 51);
             this.Aceptarbutton.TabIndex = 4;
-            this.Aceptarbutton.Text = "Aceptar";
             this.Aceptarbutton.UseVisualStyleBackColor = true;
             this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
             // 
@@ -82,12 +86,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 464);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(395, 490);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.clavetexbox);
             this.Controls.Add(this.usuarioTextBox);
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
