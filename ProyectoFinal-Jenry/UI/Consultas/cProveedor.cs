@@ -156,5 +156,14 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                 ConsultadataGridView.DataSource = listado;
             }
         }
+
+        private void Imprimirbutton_Click(object sender, EventArgs e)
+        {
+            var listado = new List<Proveedor>();
+            RepositorioBase<Proveedor> rListado = new RepositorioBase<Proveedor> ();
+            listado = rListado.GetList(p => true);
+            Reporte.FormularioProveedor frm = new Reporte.FormularioProveedor(listado);
+            frm.ShowDialog();
+        }
     }
 }

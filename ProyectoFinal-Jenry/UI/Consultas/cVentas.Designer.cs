@@ -50,12 +50,13 @@
             // 
             // Imprimirbutton
             // 
-            this.Imprimirbutton.Location = new System.Drawing.Point(1090, 725);
+            this.Imprimirbutton.Location = new System.Drawing.Point(479, 734);
             this.Imprimirbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(96, 98);
+            this.Imprimirbutton.Size = new System.Drawing.Size(248, 84);
             this.Imprimirbutton.TabIndex = 40;
             this.Imprimirbutton.UseVisualStyleBackColor = true;
+            this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
             // 
             // ConsultadataGridView
             // 
@@ -224,7 +225,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "cVentas";
-            this.Text = "cVentas";
+            this.Text = "Consultas Ventas";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -280,5 +280,15 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                 ConsultadataGridView.DataSource = listado;
             }
         }
+
+        private void Imprimirbutton_Click(object sender, EventArgs e)
+        {
+
+            var listado = new List<Articulos>();
+            RepositorioBase<Articulos> rListado = new RepositorioBase<Articulos>();
+            listado = rListado.GetList(p => true);
+            Reporte.FormularioArticulos frm = new Reporte.FormularioArticulos(listado);
+            frm.ShowDialog();
+        }
     }
 }

@@ -203,5 +203,10 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                 ConsultadataGridView.DataSource = listado;
             }
         }
+
+        private void Imprimirbutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

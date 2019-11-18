@@ -241,7 +241,7 @@
             0,
             0});
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
-            this.CantidadnumericUpDown.Size = new System.Drawing.Size(180, 26);
+            this.CantidadnumericUpDown.Size = new System.Drawing.Size(340, 26);
             this.CantidadnumericUpDown.TabIndex = 49;
             this.CantidadnumericUpDown.Value = new decimal(new int[] {
             1,
@@ -451,7 +451,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IDnumericUpDown);
             this.Name = "rVentas";
-            this.Text = "rVentas";
+            this.Text = "Registros De Ventas";
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();

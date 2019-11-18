@@ -431,7 +431,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rArticulo";
-            this.Text = "rArticulo";
+            this.Text = "Registro Articulo";
             ((System.ComponentModel.ISupportInitialize)(this.CostonumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).EndInit();

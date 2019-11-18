@@ -226,16 +226,16 @@ namespace ProyectoFinal_Jenry.UI.Registros
             {
                 if (!ExisteEnLaBaseDeDatos())
                 {
-                    MessageBox.Show("No se puede guardar.", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se puede guardar.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 paso = VentaBLL.Modificar(v);
             }
 
             if (paso)
-                MessageBox.Show("Guardado", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Guardado", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
-                MessageBox.Show("No fue posible guardar", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No fue posible guardar", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Error);
            // Factura r = new Factura(Detalle);
            // r.ShowDialog();
             Limpiar();
