@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal_Jenry.UI.Reporte
 {
-    partial class FormularioCliente
+    partial class FormularioProveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -38,19 +38,19 @@
             this.VisorCrystalReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VisorCrystalReport.Location = new System.Drawing.Point(0, 0);
             this.VisorCrystalReport.Name = "VisorCrystalReport";
-            this.VisorCrystalReport.Size = new System.Drawing.Size(966, 615);
+            this.VisorCrystalReport.Size = new System.Drawing.Size(945, 604);
             this.VisorCrystalReport.TabIndex = 0;
-            this.VisorCrystalReport.Load += new System.EventHandler(this.VisorCrystalReport_Load);
+            this.VisorCrystalReport.Load += new System.EventHandler(this.CrystalReportViewer1_Load);
             // 
-            // FormularioCliente
+            // FormularioProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 615);
+            this.ClientSize = new System.Drawing.Size(945, 604);
             this.Controls.Add(this.VisorCrystalReport);
-            this.Name = "FormularioCliente";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "FormularioProveedor";
+            this.Text = "FormularioProveedor";
+            this.Load += new System.EventHandler(this.FormularioProveedor_Load);
             this.ResumeLayout(false);
 
         }

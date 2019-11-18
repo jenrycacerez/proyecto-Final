@@ -37,5 +37,10 @@ namespace ProyectoFinal_Jenry.UI.Reporte
 
           
         }
+
+        private void VisorCrystalReport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
