@@ -320,6 +320,11 @@ namespace ProyectoFinal_Jenry.UI.Registros
         {
 
         }
+
+        private void RVentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
       

@@ -80,7 +80,7 @@
             this.ArticulotextBox.Location = new System.Drawing.Point(136, 139);
             this.ArticulotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ArticulotextBox.Name = "ArticulotextBox";
-            this.ArticulotextBox.Size = new System.Drawing.Size(290, 26);
+            this.ArticulotextBox.Size = new System.Drawing.Size(434, 26);
             this.ArticulotextBox.TabIndex = 66;
             // 
             // ItbiscomboBox
@@ -184,7 +184,7 @@
             this.Eliminarbutton.Location = new System.Drawing.Point(413, 604);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(159, 76);
+            this.Eliminarbutton.Size = new System.Drawing.Size(159, 93);
             this.Eliminarbutton.TabIndex = 55;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -195,7 +195,7 @@
             // 
             this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
-            this.Buscarbutton.Location = new System.Drawing.Point(268, 13);
+            this.Buscarbutton.Location = new System.Drawing.Point(321, 8);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
@@ -210,7 +210,7 @@
             this.Nuevobutton.Location = new System.Drawing.Point(47, 604);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(164, 76);
+            this.Nuevobutton.Size = new System.Drawing.Size(164, 93);
             this.Nuevobutton.TabIndex = 53;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -224,7 +224,7 @@
             this.Guardarbutton.Location = new System.Drawing.Point(231, 604);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(158, 76);
+            this.Guardarbutton.Size = new System.Drawing.Size(158, 93);
             this.Guardarbutton.TabIndex = 52;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -278,7 +278,7 @@
             0,
             0});
             this.CodigonumericUpDown.Name = "CodigonumericUpDown";
-            this.CodigonumericUpDown.Size = new System.Drawing.Size(200, 26);
+            this.CodigonumericUpDown.Size = new System.Drawing.Size(253, 26);
             this.CodigonumericUpDown.TabIndex = 48;
             // 
             // IDnumericUpDown
@@ -286,7 +286,7 @@
             this.IDnumericUpDown.Location = new System.Drawing.Point(136, 27);
             this.IDnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
-            this.IDnumericUpDown.Size = new System.Drawing.Size(106, 26);
+            this.IDnumericUpDown.Size = new System.Drawing.Size(177, 26);
             this.IDnumericUpDown.TabIndex = 47;
             // 
             // label8

@@ -75,12 +75,12 @@
             this.DetalledataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.DetalledataGridView.BackgroundColor = System.Drawing.Color.White;
             this.DetalledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DetalledataGridView.Location = new System.Drawing.Point(7, 26);
+            this.DetalledataGridView.Location = new System.Drawing.Point(0, 34);
             this.DetalledataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DetalledataGridView.Name = "DetalledataGridView";
             this.DetalledataGridView.ReadOnly = true;
             this.DetalledataGridView.RowHeadersWidth = 62;
-            this.DetalledataGridView.Size = new System.Drawing.Size(663, 261);
+            this.DetalledataGridView.Size = new System.Drawing.Size(662, 261);
             this.DetalledataGridView.TabIndex = 62;
             this.DetalledataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetalledataGridView_CellContentClick);
             // 
@@ -91,7 +91,7 @@
             this.ModocomboBox.Items.AddRange(new object[] {
             "Credito",
             "Contado"});
-            this.ModocomboBox.Location = new System.Drawing.Point(562, 636);
+            this.ModocomboBox.Location = new System.Drawing.Point(644, 635);
             this.ModocomboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ModocomboBox.Name = "ModocomboBox";
             this.ModocomboBox.Size = new System.Drawing.Size(146, 28);
@@ -100,7 +100,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(449, 639);
+            this.label9.Location = new System.Drawing.Point(535, 638);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(46, 20);
@@ -113,7 +113,7 @@
             this.Clientebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Clientebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Clientebutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Clientebutton.Location = new System.Drawing.Point(611, 100);
+            this.Clientebutton.Location = new System.Drawing.Point(688, 100);
             this.Clientebutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Clientebutton.Name = "Clientebutton";
             this.Clientebutton.Size = new System.Drawing.Size(93, 32);
@@ -126,7 +126,7 @@
             // 
             this.ClientecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ClientecomboBox.FormattingEnabled = true;
-            this.ClientecomboBox.Location = new System.Drawing.Point(155, 104);
+            this.ClientecomboBox.Location = new System.Drawing.Point(232, 104);
             this.ClientecomboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ClientecomboBox.Name = "ClientecomboBox";
             this.ClientecomboBox.Size = new System.Drawing.Size(448, 28);
@@ -135,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 104);
+            this.label3.Location = new System.Drawing.Point(118, 104);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
@@ -144,7 +144,7 @@
             // 
             // SubtotaltextBox
             // 
-            this.SubtotaltextBox.Location = new System.Drawing.Point(562, 713);
+            this.SubtotaltextBox.Location = new System.Drawing.Point(648, 712);
             this.SubtotaltextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SubtotaltextBox.Name = "SubtotaltextBox";
             this.SubtotaltextBox.ReadOnly = true;
@@ -153,7 +153,7 @@
             // 
             // ITBIStextBox
             // 
-            this.ITBIStextBox.Location = new System.Drawing.Point(562, 677);
+            this.ITBIStextBox.Location = new System.Drawing.Point(648, 676);
             this.ITBIStextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ITBIStextBox.Name = "ITBIStextBox";
             this.ITBIStextBox.ReadOnly = true;
@@ -163,7 +163,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(449, 716);
+            this.label7.Location = new System.Drawing.Point(535, 715);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 20);
@@ -173,7 +173,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(449, 680);
+            this.label6.Location = new System.Drawing.Point(535, 679);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 20);
@@ -188,7 +188,7 @@
             this.Addbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Addbutton.Image = ((System.Drawing.Image)(resources.GetObject("Addbutton.Image")));
             this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbutton.Location = new System.Drawing.Point(506, 259);
+            this.Addbutton.Location = new System.Drawing.Point(586, 259);
             this.Addbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Addbutton.Name = "Addbutton";
             this.Addbutton.Size = new System.Drawing.Size(198, 49);
@@ -205,7 +205,7 @@
             this.Removerbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Removerbutton.Image = ((System.Drawing.Image)(resources.GetObject("Removerbutton.Image")));
             this.Removerbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Removerbutton.Location = new System.Drawing.Point(45, 636);
+            this.Removerbutton.Location = new System.Drawing.Point(122, 641);
             this.Removerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Removerbutton.Name = "Removerbutton";
             this.Removerbutton.Size = new System.Drawing.Size(290, 67);
@@ -218,7 +218,7 @@
             // 
             this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
-            this.Buscarbutton.Location = new System.Drawing.Point(289, 24);
+            this.Buscarbutton.Location = new System.Drawing.Point(366, 24);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
@@ -228,7 +228,7 @@
             // 
             // CantidadnumericUpDown
             // 
-            this.CantidadnumericUpDown.Location = new System.Drawing.Point(155, 272);
+            this.CantidadnumericUpDown.Location = new System.Drawing.Point(232, 272);
             this.CantidadnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CantidadnumericUpDown.Maximum = new decimal(new int[] {
             100000,
@@ -252,7 +252,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 274);
+            this.label5.Location = new System.Drawing.Point(118, 274);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 20);
@@ -262,7 +262,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 221);
+            this.label4.Location = new System.Drawing.Point(118, 221);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 20);
@@ -271,7 +271,7 @@
             // 
             // PreciotextBox
             // 
-            this.PreciotextBox.Location = new System.Drawing.Point(155, 218);
+            this.PreciotextBox.Location = new System.Drawing.Point(232, 218);
             this.PreciotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PreciotextBox.Name = "PreciotextBox";
             this.PreciotextBox.ReadOnly = true;
@@ -284,7 +284,7 @@
             this.Articulobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Articulobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Articulobutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Articulobutton.Location = new System.Drawing.Point(611, 164);
+            this.Articulobutton.Location = new System.Drawing.Point(688, 164);
             this.Articulobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Articulobutton.Name = "Articulobutton";
             this.Articulobutton.Size = new System.Drawing.Size(93, 28);
@@ -297,7 +297,7 @@
             // 
             this.ProductocomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProductocomboBox.FormattingEnabled = true;
-            this.ProductocomboBox.Location = new System.Drawing.Point(155, 164);
+            this.ProductocomboBox.Location = new System.Drawing.Point(232, 164);
             this.ProductocomboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProductocomboBox.Name = "ProductocomboBox";
             this.ProductocomboBox.Size = new System.Drawing.Size(448, 28);
@@ -307,7 +307,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 164);
+            this.label2.Location = new System.Drawing.Point(118, 164);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 20);
@@ -317,7 +317,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 40);
+            this.label1.Location = new System.Drawing.Point(118, 40);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 20);
@@ -326,7 +326,7 @@
             // 
             // IDnumericUpDown
             // 
-            this.IDnumericUpDown.Location = new System.Drawing.Point(155, 40);
+            this.IDnumericUpDown.Location = new System.Drawing.Point(232, 40);
             this.IDnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
             this.IDnumericUpDown.Size = new System.Drawing.Size(126, 26);
@@ -335,9 +335,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.DetalledataGridView);
-            this.groupBox1.Location = new System.Drawing.Point(45, 316);
+            this.groupBox1.Location = new System.Drawing.Point(122, 324);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(675, 295);
+            this.groupBox1.Size = new System.Drawing.Size(662, 295);
             this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ventas";
@@ -345,7 +345,7 @@
             // 
             // TotaltextBox
             // 
-            this.TotaltextBox.Location = new System.Drawing.Point(562, 749);
+            this.TotaltextBox.Location = new System.Drawing.Point(648, 745);
             this.TotaltextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TotaltextBox.Name = "TotaltextBox";
             this.TotaltextBox.ReadOnly = true;
@@ -355,7 +355,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(449, 752);
+            this.label8.Location = new System.Drawing.Point(535, 751);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 20);
@@ -366,7 +366,7 @@
             // 
             this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
-            this.Nuevobutton.Location = new System.Drawing.Point(43, 809);
+            this.Nuevobutton.Location = new System.Drawing.Point(120, 809);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(173, 81);
@@ -380,7 +380,7 @@
             // 
             this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(533, 809);
+            this.Eliminarbutton.Location = new System.Drawing.Point(610, 809);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(173, 81);
@@ -394,7 +394,7 @@
             // 
             this.Guardarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
-            this.Guardarbutton.Location = new System.Drawing.Point(289, 809);
+            this.Guardarbutton.Location = new System.Drawing.Point(366, 809);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Guardarbutton.Name = "Guardarbutton";
             this.Guardarbutton.Size = new System.Drawing.Size(165, 81);
@@ -408,7 +408,7 @@
             // 
             this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(504, 35);
+            this.FechadateTimePicker.Location = new System.Drawing.Point(581, 35);
             this.FechadateTimePicker.Name = "FechadateTimePicker";
             this.FechadateTimePicker.Size = new System.Drawing.Size(200, 26);
             this.FechadateTimePicker.TabIndex = 69;
@@ -421,7 +421,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 904);
+            this.ClientSize = new System.Drawing.Size(913, 904);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.label8);
@@ -452,6 +452,7 @@
             this.Controls.Add(this.IDnumericUpDown);
             this.Name = "rVentas";
             this.Text = "Registros De Ventas";
+            this.Load += new System.EventHandler(this.RVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
