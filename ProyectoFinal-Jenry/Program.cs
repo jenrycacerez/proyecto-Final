@@ -14,9 +14,13 @@ namespace ProyectoFinal_Jenry
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuForm(0));
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new MenuForm());
+            }
+            catch { }
         }
     }
 }

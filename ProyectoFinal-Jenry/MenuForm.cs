@@ -16,10 +16,10 @@ namespace ProyectoFinal_Jenry
     public partial class MenuForm : Form
     {
         public int id { get; set; }
-        public MenuForm(int id)
+        public MenuForm()
         {
 
-            this.id = id;
+          //  this.id = id;
             InitializeComponent();
 
             this.Visible = false;

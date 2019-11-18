@@ -249,7 +249,11 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            var listado = new List<Clientes>();
+            RepositorioBase<Clientes> rListado = new RepositorioBase<Clientes>();
+            listado = rListado.GetList(p => true);
+            Reporte.FormularioCliente frm = new Reporte.FormularioCliente(listado);
+            frm.ShowDialog();
         }
     }
 }
