@@ -23,7 +23,7 @@ namespace ProyectoFinal_Jenry.BLL
                 {
                     foreach (var item in venta.Detalle)
                     {
-                        var producto = prod.Buscar(item.ProductoId);
+                        var producto = prod.Buscar(item.ArticuloId);
                         producto.Cantidad -= item.Cantidad;
                         prod.Modificar(producto);
                     }
@@ -48,7 +48,7 @@ namespace ProyectoFinal_Jenry.BLL
                 var venta = db.Ventas.Find(id);
                 foreach (var item in venta.Detalle)
                 {
-                    var producto = prod.Buscar(item.ProductoId);
+                    var producto = prod.Buscar(item.ArticuloId);
                     producto.Cantidad += item.Cantidad;
                     prod.Modificar(producto);
                 }
@@ -80,7 +80,7 @@ namespace ProyectoFinal_Jenry.BLL
                 {
                     foreach (var item in venta.Detalle)
                     {
-                        db.Articulos.Find(item.ProductoId).Cantidad += item.Cantidad;
+                        db.Articulos.Find(item.ArticuloId).Cantidad += item.Cantidad;
                         if (!ventas.Detalle.ToList().Exists(v => v.VentaDetalleId == item.VentaDetalleId))
                         {
 
@@ -90,7 +90,7 @@ namespace ProyectoFinal_Jenry.BLL
 
                     foreach (var item in ventas.Detalle)
                     {
-                        db.Articulos.Find(item.ProductoId).Cantidad -= item.Cantidad;
+                        db.Articulos.Find(item.ArticuloId).Cantidad -= item.Cantidad;
                         var estado = item.VentaDetalleId > 0 ? EntityState.Modified : EntityState.Added;
                         db.Entry(item).State = estado;
                     }

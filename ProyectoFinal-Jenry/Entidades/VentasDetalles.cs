@@ -13,7 +13,7 @@ namespace ProyectoFinal_Jenry.Entidades
         [Key]
         [Browsable(false)]
         public int VentaDetalleId { get; set; }
-        public int ProductoId { get; set; }
+        public int ArticuloId { get; set; }
         public decimal Precio { get; set; }
         public int Cantidad { get; set; }
         public decimal Impuesto { get; set; }
@@ -24,7 +24,7 @@ namespace ProyectoFinal_Jenry.Entidades
             Precio = 0;
             Cantidad = 0;
             Impuesto = 0;
-            ProductoId = 0;
+            ArticuloId = 0;
         }
     }
 }

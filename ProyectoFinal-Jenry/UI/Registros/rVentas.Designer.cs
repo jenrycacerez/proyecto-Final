@@ -45,7 +45,6 @@
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.DisponiblestextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.PreciotextBox = new System.Windows.Forms.TextBox();
             this.Articulobutton = new System.Windows.Forms.Button();
@@ -260,15 +259,6 @@
             this.label5.TabIndex = 48;
             this.label5.Text = "Cantidad";
             // 
-            // DisponiblestextBox
-            // 
-            this.DisponiblestextBox.Location = new System.Drawing.Point(363, 271);
-            this.DisponiblestextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.DisponiblestextBox.Name = "DisponiblestextBox";
-            this.DisponiblestextBox.ReadOnly = true;
-            this.DisponiblestextBox.Size = new System.Drawing.Size(91, 26);
-            this.DisponiblestextBox.TabIndex = 47;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -351,6 +341,7 @@
             this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ventas";
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // TotaltextBox
             // 
@@ -452,7 +443,6 @@
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.CantidadnumericUpDown);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.DisponiblestextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PreciotextBox);
             this.Controls.Add(this.Articulobutton);
@@ -489,7 +479,6 @@
         private System.Windows.Forms.Button Buscarbutton;
         private System.Windows.Forms.NumericUpDown CantidadnumericUpDown;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox DisponiblestextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox PreciotextBox;
         private System.Windows.Forms.Button Articulobutton;

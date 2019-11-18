@@ -19,7 +19,7 @@ namespace ProyectoFinal_Jenry
         public MenuForm()
         {
 
-          //  this.id = id;
+            this.id = id;
             InitializeComponent();
 
             this.Visible = false;
@@ -94,5 +94,26 @@ namespace ProyectoFinal_Jenry
             cArticulo cArticulo = new cArticulo();
             cArticulo.Show();
         }
+
+        private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var select = MessageBox.Show("¿Seguro?", "Rafa Motor Sotfware.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (select == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void DesconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var select = MessageBox.Show("¿Seguro?", "Rafa Motor Sotfware.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (select == DialogResult.Yes)
+            {
+                this.Close();
+                Login login = new Login();
+                login.Show();
+            }
+        }
+
+       
     }
 }

@@ -72,7 +72,6 @@
             this.CantidadtextBox.Location = new System.Drawing.Point(136, 233);
             this.CantidadtextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CantidadtextBox.Name = "CantidadtextBox";
-            this.CantidadtextBox.ReadOnly = true;
             this.CantidadtextBox.Size = new System.Drawing.Size(434, 26);
             this.CantidadtextBox.TabIndex = 67;
             // 

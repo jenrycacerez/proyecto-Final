@@ -19,8 +19,8 @@ namespace ProyectoFinal_Jenry.UI.Registros
         public rArticulo(int id)
         {
             this.id = id;
-            Proveedore();
             InitializeComponent();
+            Proveedore();
         }
 
         private void Proveedore()

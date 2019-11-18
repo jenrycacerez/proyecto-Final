@@ -38,14 +38,14 @@
             // 
             // usuarioTextBox
             // 
-            this.usuarioTextBox.Location = new System.Drawing.Point(60, 252);
+            this.usuarioTextBox.Location = new System.Drawing.Point(59, 294);
             this.usuarioTextBox.Name = "usuarioTextBox";
             this.usuarioTextBox.Size = new System.Drawing.Size(448, 26);
             this.usuarioTextBox.TabIndex = 0;
             // 
             // clavetexbox
             // 
-            this.clavetexbox.Location = new System.Drawing.Point(60, 318);
+            this.clavetexbox.Location = new System.Drawing.Point(59, 360);
             this.clavetexbox.Name = "clavetexbox";
             this.clavetexbox.Size = new System.Drawing.Size(448, 26);
             this.clavetexbox.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(56, 229);
+            this.label1.Location = new System.Drawing.Point(55, 271);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(56, 295);
+            this.label2.Location = new System.Drawing.Point(55, 337);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             this.Aceptarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
-            this.Aceptarbutton.Location = new System.Drawing.Point(164, 369);
+            this.Aceptarbutton.Location = new System.Drawing.Point(163, 415);
             this.Aceptarbutton.Name = "Aceptarbutton";
             this.Aceptarbutton.Size = new System.Drawing.Size(252, 74);
             this.Aceptarbutton.TabIndex = 4;
@@ -90,7 +90,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(570, 455);
+            this.ClientSize = new System.Drawing.Size(570, 511);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

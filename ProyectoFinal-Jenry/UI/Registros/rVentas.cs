@@ -117,7 +117,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             ProductocomboBox.Text = null;
             PreciotextBox.Text = string.Empty;
             CantidadnumericUpDown.Value = 1;
-            DisponiblestextBox.Text = string.Empty;
+          //  DisponiblestextBox.Text = string.Empty;
             FechadateTimePicker.Value = DateTime.Now;
             ITBIStextBox.Text = string.Empty;
             SubtotaltextBox.Text = string.Empty;
@@ -261,7 +261,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             if (p != null)
             {
                 PreciotextBox.Text = Convert.ToString(p.Precio);
-                DisponiblestextBox.Text = Convert.ToString(p.Cantidad);
+             // DisponiblestextBox.Text = Convert.ToString(p.Cantidad);
             }
         }
 
@@ -273,18 +273,18 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
                 foreach (var item in Detalle)
                 {
-                    if (d == item.ProductoId)
+                    if (d == item.ArticuloId)
                     {
-                        MyErrorProvider.SetError(Addbutton, "El producto ya esta en el grid.");
+                        MyErrorProvider.SetError(Addbutton, "El Articulo ya esta en el grid.");
                         return;
                     }
                 }
-
-                if (CantidadnumericUpDown.Value > Convert.ToInt32(DisponiblestextBox.Text))
+                /*
+               if (CantidadnumericUpDown.Value > Convert.ToInt32(DisponiblestextBox.Text))
                 {
-                    MyErrorProvider.SetError(DisponiblestextBox, "No quedan disponibles.");
-                    return;
-                }
+                 MyErrorProvider.SetError(DisponiblestextBox, "No quedan disponibles.");
+                   return;
+               }*/
             }
 
             if (DetalledataGridView.DataSource != null)
@@ -296,7 +296,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             {
                 this.Detalle.Add(new VentasDetalles()
                 {
-                    ProductoId = (int)ProductocomboBox.SelectedValue,
+                    ArticuloId = (int)ProductocomboBox.SelectedValue,
                     Cantidad = (int)CantidadnumericUpDown.Value,
                     Precio = Convert.ToDecimal(PreciotextBox.Text),
                     Impuesto = p.ITBIS * CantidadnumericUpDown.Value
@@ -304,11 +304,23 @@ namespace ProyectoFinal_Jenry.UI.Registros
             }
             ProductocomboBox.Text = null;
             PreciotextBox.Text = null;
-            DisponiblestextBox.Text = null;
+          //  DisponiblestextBox.Text = null;
             CargarGrid();
             CalcularItbis();
             CalcularSubtotal();
             CalcularTotal();
         }
+
+        private void DisponiblestextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+
+      
+    }

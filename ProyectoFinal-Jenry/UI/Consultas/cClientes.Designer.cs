@@ -50,12 +50,15 @@
             // 
             // Imprimirbutton
             // 
-            this.Imprimirbutton.Location = new System.Drawing.Point(1089, 717);
+            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Imprimirbutton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Imprimirbutton.Location = new System.Drawing.Point(444, 718);
             this.Imprimirbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(96, 98);
+            this.Imprimirbutton.Size = new System.Drawing.Size(254, 92);
             this.Imprimirbutton.TabIndex = 34;
-            this.Imprimirbutton.UseVisualStyleBackColor = true;
+            this.Imprimirbutton.Text = "Imprimir";
+            this.Imprimirbutton.UseVisualStyleBackColor = false;
             this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
             // 
             // ConsultadataGridView
@@ -216,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 829);
+            this.ClientSize = new System.Drawing.Size(1206, 815);
             this.Controls.Add(this.Imprimirbutton);
             this.Controls.Add(this.ConsultadataGridView);
             this.Controls.Add(this.CriteriotextBox);
@@ -224,7 +227,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "cClientes";
-            this.Text = "cClientes";
+            this.Text = "Consultas Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
