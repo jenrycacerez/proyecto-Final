@@ -34,7 +34,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
         }
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            RepositorioBase<Articulos> Repositorio = new RepositorioBase<Articulos>();
+             RepositorioBase<Articulos> Repositorio = new RepositorioBase<Articulos>();
             Articulos p = new Articulos();
             int id;
             int.TryParse(IDnumericUpDown.Text, out id);

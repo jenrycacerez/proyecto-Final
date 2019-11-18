@@ -40,14 +40,14 @@
             // 
             this.usuarioTextBox.Location = new System.Drawing.Point(60, 252);
             this.usuarioTextBox.Name = "usuarioTextBox";
-            this.usuarioTextBox.Size = new System.Drawing.Size(248, 26);
+            this.usuarioTextBox.Size = new System.Drawing.Size(448, 26);
             this.usuarioTextBox.TabIndex = 0;
             // 
             // clavetexbox
             // 
             this.clavetexbox.Location = new System.Drawing.Point(60, 318);
             this.clavetexbox.Name = "clavetexbox";
-            this.clavetexbox.Size = new System.Drawing.Size(248, 26);
+            this.clavetexbox.Size = new System.Drawing.Size(448, 26);
             this.clavetexbox.TabIndex = 1;
             this.clavetexbox.UseSystemPasswordChar = true;
             // 
@@ -75,9 +75,9 @@
             // 
             this.Aceptarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
-            this.Aceptarbutton.Location = new System.Drawing.Point(83, 364);
+            this.Aceptarbutton.Location = new System.Drawing.Point(164, 369);
             this.Aceptarbutton.Name = "Aceptarbutton";
-            this.Aceptarbutton.Size = new System.Drawing.Size(209, 51);
+            this.Aceptarbutton.Size = new System.Drawing.Size(252, 74);
             this.Aceptarbutton.TabIndex = 4;
             this.Aceptarbutton.UseVisualStyleBackColor = true;
             this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
@@ -90,7 +90,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(395, 490);
+            this.ClientSize = new System.Drawing.Size(570, 455);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
