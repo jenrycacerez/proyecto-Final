@@ -23,6 +23,7 @@ namespace ProyectoFinal_Jenry.Entidades
         public DateTime Fecha { get; set; }
         [Browsable(false)]
         public int UsuarioId { get; set; }
+
         public Clientes()
         {
             ClienteId = 0;

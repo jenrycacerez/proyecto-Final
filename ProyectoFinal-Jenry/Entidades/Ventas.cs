@@ -20,6 +20,8 @@ namespace ProyectoFinal_Jenry.Entidades
         public DateTime Fecha { get; set; }
         [Browsable(false)]
         public int UsuarioId { get; set; }
+
+        public int Clienteid { get; set; }
         public virtual List<VentasDetalles> Detalle { get; set; }
         public Ventas()
         {
@@ -31,6 +33,7 @@ namespace ProyectoFinal_Jenry.Entidades
             Subtotal = 0;
             Total = 0;
             Fecha = DateTime.Now;
+            Clienteid = 0;
             Detalle = new List<VentasDetalles>();
         }
     }

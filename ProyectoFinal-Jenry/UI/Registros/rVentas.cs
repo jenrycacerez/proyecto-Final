@@ -173,6 +173,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             v.Subtotal = Convert.ToDecimal(SubtotaltextBox.Text);
             v.Total = Convert.ToDecimal(TotaltextBox.Text);
             v.UsuarioId = id;
+           // v.Clienteid = id;
             return v;
         }
 

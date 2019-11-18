@@ -171,7 +171,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                             else
                             {
                                 int id = Convert.ToInt32(CriteriotextBox.Text);
-                                listado = r.GetList(p => p.ProductoId == id);
+                                listado = r.GetList(p => p.ArticuloId == id);
                             }
                             break;
                         case "Codigo":

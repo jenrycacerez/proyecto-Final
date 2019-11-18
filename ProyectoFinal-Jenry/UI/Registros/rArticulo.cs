@@ -55,7 +55,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
         private void AddProveedorbutton_Click(object sender, EventArgs e)
         {
-            rProveedor r = new rProveedor();
+            rProveedor r = new rProveedor(id);
             r.ShowDialog();
         }
 

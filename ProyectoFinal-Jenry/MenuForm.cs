@@ -21,6 +21,18 @@ namespace ProyectoFinal_Jenry
 
             this.id = id;
             InitializeComponent();
+
+            this.Visible = false;
+            Login login = new Login();
+            login.ShowDialog();
+            if (login.Valido)
+            {
+                this.Visible = true;
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
         private void RegistrosArticulosToolStripMenuItem_Click(object sender, EventArgs e)
