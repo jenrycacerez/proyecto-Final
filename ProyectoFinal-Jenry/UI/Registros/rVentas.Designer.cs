@@ -109,7 +109,7 @@
             // 
             // Clientebutton
             // 
-            this.Clientebutton.BackColor = System.Drawing.Color.Teal;
+            this.Clientebutton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Clientebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Clientebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Clientebutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -182,16 +182,14 @@
             // 
             // Addbutton
             // 
-            this.Addbutton.BackColor = System.Drawing.Color.White;
+            this.Addbutton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Addbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Addbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Addbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Addbutton.Image = ((System.Drawing.Image)(resources.GetObject("Addbutton.Image")));
-            this.Addbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Addbutton.Location = new System.Drawing.Point(586, 259);
+            this.Addbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Addbutton.Location = new System.Drawing.Point(585, 265);
             this.Addbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Addbutton.Name = "Addbutton";
-            this.Addbutton.Size = new System.Drawing.Size(198, 49);
+            this.Addbutton.Size = new System.Drawing.Size(198, 36);
             this.Addbutton.TabIndex = 52;
             this.Addbutton.Text = "   + AGREGAR";
             this.Addbutton.UseVisualStyleBackColor = false;
@@ -208,7 +206,7 @@
             this.Removerbutton.Location = new System.Drawing.Point(122, 641);
             this.Removerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Removerbutton.Name = "Removerbutton";
-            this.Removerbutton.Size = new System.Drawing.Size(290, 67);
+            this.Removerbutton.Size = new System.Drawing.Size(298, 70);
             this.Removerbutton.TabIndex = 51;
             this.Removerbutton.Text = "- REMOVER FILA";
             this.Removerbutton.UseVisualStyleBackColor = false;
@@ -280,7 +278,7 @@
             // 
             // Articulobutton
             // 
-            this.Articulobutton.BackColor = System.Drawing.Color.Teal;
+            this.Articulobutton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Articulobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Articulobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Articulobutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -335,7 +333,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.DetalledataGridView);
-            this.groupBox1.Location = new System.Drawing.Point(122, 324);
+            this.groupBox1.Location = new System.Drawing.Point(128, 318);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(662, 295);
             this.groupBox1.TabIndex = 63;
@@ -421,6 +419,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(913, 904);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);

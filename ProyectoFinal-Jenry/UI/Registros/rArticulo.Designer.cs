@@ -60,6 +60,7 @@
             this.ModelotextBox = new System.Windows.Forms.TextBox();
             this.MarcatextBox = new System.Windows.Forms.TextBox();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.CostonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).BeginInit();
@@ -395,12 +396,22 @@
             // 
             this.MyErrorProvider.ContainerControl = this;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(413, 21);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(159, 26);
+            this.dateTimePicker1.TabIndex = 72;
+            // 
             // rArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(615, 711);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.MarcatextBox);
             this.Controls.Add(this.ModelotextBox);
             this.Controls.Add(this.label12);
@@ -474,5 +485,6 @@
         private System.Windows.Forms.TextBox ModelotextBox;
         private System.Windows.Forms.TextBox MarcatextBox;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
