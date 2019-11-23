@@ -368,7 +368,7 @@
             this.Nuevobutton.Location = new System.Drawing.Point(120, 809);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(137, 81);
+            this.Nuevobutton.Size = new System.Drawing.Size(137, 89);
             this.Nuevobutton.TabIndex = 66;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -382,7 +382,7 @@
             this.Eliminarbutton.Location = new System.Drawing.Point(472, 809);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(136, 81);
+            this.Eliminarbutton.Size = new System.Drawing.Size(136, 89);
             this.Eliminarbutton.TabIndex = 65;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -396,7 +396,7 @@
             this.Guardarbutton.Location = new System.Drawing.Point(301, 809);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(133, 81);
+            this.Guardarbutton.Size = new System.Drawing.Size(133, 89);
             this.Guardarbutton.TabIndex = 64;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -422,7 +422,7 @@
             this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
             this.Imprimirbutton.Location = new System.Drawing.Point(648, 809);
             this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(142, 81);
+            this.Imprimirbutton.Size = new System.Drawing.Size(142, 89);
             this.Imprimirbutton.TabIndex = 70;
             this.Imprimirbutton.Text = "Imprimir";
             this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;

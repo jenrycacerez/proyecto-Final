@@ -159,11 +159,22 @@ namespace ProyectoFinal_Jenry.UI.Consultas
 
         private void Imprimirbutton_Click(object sender, EventArgs e)
         {
-            var listado = new List<Proveedor>();
-            RepositorioBase<Proveedor> rListado = new RepositorioBase<Proveedor> ();
-            listado = rListado.GetList(p => true);
-            Reporte.FormularioProveedor frm = new Reporte.FormularioProveedor(listado);
-            frm.ShowDialog();
+
+            if (ConsultadataGridView.RowCount == 0)
+            {
+                MessageBox.Show("No se puede imprimir");
+                return;
+            }
+            else
+            {
+                var listado = new List<Proveedor>();
+                RepositorioBase<Proveedor> rListado = new RepositorioBase<Proveedor>();
+                listado = rListado.GetList(p => true);
+                Reporte.FormularioProveedor frm = new Reporte.FormularioProveedor(listado);
+                frm.ShowDialog();
+            }
+
+          
         }
 
         private void ConsultadataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

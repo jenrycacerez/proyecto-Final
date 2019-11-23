@@ -173,7 +173,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             v.Subtotal = Convert.ToDecimal(SubtotaltextBox.Text);
             v.Total = Convert.ToDecimal(TotaltextBox.Text);
             v.UsuarioId = id;
-           // v.Clienteid = id;
+            v.Clienteid = id;
             return v;
         }
 
@@ -201,7 +201,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             }
             if (Detalle.Count == 0)
             {
-                MessageBox.Show("El grid esta vacio.", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("El grid esta vacio.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 paso = false;
             }
             return paso;
