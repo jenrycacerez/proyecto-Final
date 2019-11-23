@@ -60,6 +60,7 @@
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Imprimirbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
@@ -80,7 +81,7 @@
             this.DetalledataGridView.Name = "DetalledataGridView";
             this.DetalledataGridView.ReadOnly = true;
             this.DetalledataGridView.RowHeadersWidth = 62;
-            this.DetalledataGridView.Size = new System.Drawing.Size(662, 261);
+            this.DetalledataGridView.Size = new System.Drawing.Size(670, 261);
             this.DetalledataGridView.TabIndex = 62;
             this.DetalledataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DetalledataGridView_CellContentClick);
             // 
@@ -333,9 +334,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.DetalledataGridView);
-            this.groupBox1.Location = new System.Drawing.Point(128, 318);
+            this.groupBox1.Location = new System.Drawing.Point(120, 318);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(662, 295);
+            this.groupBox1.Size = new System.Drawing.Size(670, 295);
             this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ventas";
@@ -367,7 +368,7 @@
             this.Nuevobutton.Location = new System.Drawing.Point(120, 809);
             this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(173, 81);
+            this.Nuevobutton.Size = new System.Drawing.Size(137, 81);
             this.Nuevobutton.TabIndex = 66;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -378,10 +379,10 @@
             // 
             this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(610, 809);
+            this.Eliminarbutton.Location = new System.Drawing.Point(472, 809);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(173, 81);
+            this.Eliminarbutton.Size = new System.Drawing.Size(136, 81);
             this.Eliminarbutton.TabIndex = 65;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -392,10 +393,10 @@
             // 
             this.Guardarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
-            this.Guardarbutton.Location = new System.Drawing.Point(366, 809);
+            this.Guardarbutton.Location = new System.Drawing.Point(301, 809);
             this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(165, 81);
+            this.Guardarbutton.Size = new System.Drawing.Size(133, 81);
             this.Guardarbutton.TabIndex = 64;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -415,12 +416,25 @@
             // 
             this.MyErrorProvider.ContainerControl = this;
             // 
+            // Imprimirbutton
+            // 
+            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
+            this.Imprimirbutton.Location = new System.Drawing.Point(648, 809);
+            this.Imprimirbutton.Name = "Imprimirbutton";
+            this.Imprimirbutton.Size = new System.Drawing.Size(142, 81);
+            this.Imprimirbutton.TabIndex = 70;
+            this.Imprimirbutton.Text = "Imprimir";
+            this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Imprimirbutton.UseVisualStyleBackColor = false;
+            // 
             // rVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(913, 904);
+            this.Controls.Add(this.Imprimirbutton);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);
             this.Controls.Add(this.label8);
@@ -494,5 +508,6 @@
         private System.Windows.Forms.Button Guardarbutton;
         private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
+        private System.Windows.Forms.Button Imprimirbutton;
     }
 }

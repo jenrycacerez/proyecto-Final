@@ -118,6 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Imprimirbutton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
+        JQAAFiUBSVIk8AAABGFJREFUeF7tnE1PE1EUhv07wIYV4SumFZAFAQILVwZQocG4MmEhblkZ/wk7oS3t
+        il9gXBlXbkRFQ2j4KK1tmbm+nXtoEJgyx54Ot+U8uWmY05vet8/MvTNT0j4wSmRUFgOVxUBlMVBZDFQW
+        A5XFQGUxUFkMVBYDlcVAXtb5+XlfX9/w8PDY2Njj2MGgGBoBEIMCySEpy/f93t7eR87Q09ODSBROAjFZ
+        2JPYpRQzADt5InYwKA0fMDo6KniIicnCPqSAgSbP8+iJ2IGdy8oEDy4ZWVAzODhoww0MDFQqFXrijqjV
+        aohh8yCY1J4TO7JsMkDbDkCB5CLJyCoUCjZWMpmkkgMgjE2FeFRqDRlZc3NzNtbk5CSVHABhbKr5+Xkq
+        tYawLPxBJQcQT6WyGKgsBiqLgcpioLIYqCwGKouBjKyZmRkba3Z2lkoOMDU19TBgenqaSq0hI8tNcP/c
+        gEqt0c2yxGHLkv3ssbNgyCqXy3icmJiwy9MVxsfHbTfXSCQSFPEaeC/UKRoMWUNDQzTITTgrC8Eo4k3g
+        JED9IhBVVuOzoTA6VBbo7++nrrcRVRa9cDidKwtQ19uIJGtjY4NeNRyVRTQuhZvQ0bJOT0+pd1PEZAF0
+        cxAK15RisUhvtSmSsjoXlcVAZTFQWQxUFgOVxeA+ypoNoI0AWwG0HcK9k5VIJGzakZERW2lcJx8fH9tK
+        GPdRlu/7nuddkYUKLtBtJYz7OA2TAbQRYCuAtkPQBZ6BymKgshioLAYqi4HKYqCyGKgsBiqLgcpiELcs
+        eyOGuzOnQKQo/925G1kOorIYqCwGKouBymKgshioLAYqi0GHyUrt/FnJltvaMAQNdo24ZTW+E9CEJrKW
+        M6UYGg12jWQyOXYbkrJa5Mq7alOjwa5BNz5Noa63EYesrkFlMZCR9Tb7yy606zs/qeQMNliTeRodGVnr
+        mX27cLzJ/qCSC/jG8y5WzK0jKrZAN8vyjP/xpC5rJVNczgv8fE8cslB/kT5ra8MQNFgDr5T7bp5n6hMQ
+        j6nsGdVbICZZMTQa7IIvZyaVPnmWrVhfptYh0zDmK3jMtwNjFrKejbS4i8ULtRo93QJxyAq+Stp2aDBj
+        jio0+1a3i0sfjkLvg/h02wKP4wcxMPvwuJD1Kz5OicClr/06IqtizGq+apMs5SGoKjD3LtEtsnyv6huc
+        8uox0pXl7TOIE/9+ctfIqmGNtxmW89XDal2Vo7Le7R7aNXVta09qgWDglZa2g2MqWK0ifdryX8jI+mbM
+        q+0Csr5MF8T3Zzhe/arcry3lLi7TM6XfYr+zeQMysnAWWk2f2H0rcPEXDWjBjnmdK6TS9XFxaH86Rll2
+        Tf8HGVnI/WSrZmWhXbkXaWuzI2L2bX4u4yijQO1B6sjCTWs1lT1FaDsdYmuLO5j7B+/zX2NYK6VkBfil
+        xc29lRxd6cTTnubKa7l9rPGUoZ2Iyup2VBYDlcVAZTFQWQxUFgOVxUBlMVBZDFQWA5UVGWP+AgT38RyP
+        R6uyAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="Consultarbutton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW

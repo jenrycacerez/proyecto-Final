@@ -50,14 +50,14 @@
             // 
             // Imprimirbutton
             // 
-            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Imprimirbutton.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
             this.Imprimirbutton.Location = new System.Drawing.Point(479, 736);
             this.Imprimirbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(226, 98);
+            this.Imprimirbutton.Size = new System.Drawing.Size(236, 98);
             this.Imprimirbutton.TabIndex = 40;
-            this.Imprimirbutton.Text = "Imprimir";
             this.Imprimirbutton.UseVisualStyleBackColor = false;
             this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
             // 

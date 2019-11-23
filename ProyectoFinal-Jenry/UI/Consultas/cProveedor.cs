@@ -165,5 +165,10 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             Reporte.FormularioProveedor frm = new Reporte.FormularioProveedor(listado);
             frm.ShowDialog();
         }
+
+        private void ConsultadataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
