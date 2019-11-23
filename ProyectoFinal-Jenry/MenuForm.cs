@@ -16,7 +16,7 @@ namespace ProyectoFinal_Jenry
     public partial class MenuForm : Form
     {
         public int id { get; set; }
-        public MenuForm()
+        public MenuForm(int id)
         {
 
             this.id = id;
@@ -114,6 +114,9 @@ namespace ProyectoFinal_Jenry
             }
         }
 
-       
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

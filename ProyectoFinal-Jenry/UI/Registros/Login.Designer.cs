@@ -29,58 +29,72 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.usuarioTextBox = new System.Windows.Forms.TextBox();
-            this.clavetexbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Aceptarbutton = new System.Windows.Forms.Button();
+            this.ClavetextBox = new System.Windows.Forms.TextBox();
+            this.Aceptarrbutton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.UsuariotextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // usuarioTextBox
+            // ClavetextBox
             // 
-            this.usuarioTextBox.Location = new System.Drawing.Point(59, 294);
-            this.usuarioTextBox.Name = "usuarioTextBox";
-            this.usuarioTextBox.Size = new System.Drawing.Size(448, 26);
-            this.usuarioTextBox.TabIndex = 0;
+            this.ClavetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClavetextBox.Location = new System.Drawing.Point(107, 316);
+            this.ClavetextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClavetextBox.Name = "ClavetextBox";
+            this.ClavetextBox.PasswordChar = '*';
+            this.ClavetextBox.Size = new System.Drawing.Size(346, 26);
+            this.ClavetextBox.TabIndex = 10;
             // 
-            // clavetexbox
+            // Aceptarrbutton
             // 
-            this.clavetexbox.Location = new System.Drawing.Point(59, 360);
-            this.clavetexbox.Name = "clavetexbox";
-            this.clavetexbox.Size = new System.Drawing.Size(448, 26);
-            this.clavetexbox.TabIndex = 1;
-            this.clavetexbox.UseSystemPasswordChar = true;
+            this.Aceptarrbutton.BackColor = System.Drawing.Color.SteelBlue;
+            this.Aceptarrbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Aceptarrbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Aceptarrbutton.Location = new System.Drawing.Point(107, 379);
+            this.Aceptarrbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Aceptarrbutton.Name = "Aceptarrbutton";
+            this.Aceptarrbutton.Size = new System.Drawing.Size(348, 65);
+            this.Aceptarrbutton.TabIndex = 11;
+            this.Aceptarrbutton.Text = "LOGIN";
+            this.Aceptarrbutton.UseVisualStyleBackColor = false;
+            this.Aceptarrbutton.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(55, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Usuario";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label3.Location = new System.Drawing.Point(234, 165);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 28);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "USUARIO";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(55, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Contraseña";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Location = new System.Drawing.Point(245, 264);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 28);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "CLAVE";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Aceptarbutton
+            // UsuariotextBox
             // 
-            this.Aceptarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
-            this.Aceptarbutton.Location = new System.Drawing.Point(182, 410);
-            this.Aceptarbutton.Name = "Aceptarbutton";
-            this.Aceptarbutton.Size = new System.Drawing.Size(206, 74);
-            this.Aceptarbutton.TabIndex = 4;
-            this.Aceptarbutton.UseVisualStyleBackColor = true;
-            this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
+            this.UsuariotextBox.Location = new System.Drawing.Point(107, 213);
+            this.UsuariotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UsuariotextBox.Name = "UsuariotextBox";
+            this.UsuariotextBox.Size = new System.Drawing.Size(346, 26);
+            this.UsuariotextBox.TabIndex = 9;
             // 
             // Login
             // 
@@ -91,14 +105,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(563, 505);
-            this.Controls.Add(this.Aceptarbutton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.clavetexbox);
-            this.Controls.Add(this.usuarioTextBox);
+            this.Controls.Add(this.ClavetextBox);
+            this.Controls.Add(this.Aceptarrbutton);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.UsuariotextBox);
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,10 +121,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox usuarioTextBox;
-        private System.Windows.Forms.TextBox clavetexbox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button Aceptarbutton;
+        private System.Windows.Forms.TextBox ClavetextBox;
+        private System.Windows.Forms.Button Aceptarrbutton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox UsuariotextBox;
     }
 }
