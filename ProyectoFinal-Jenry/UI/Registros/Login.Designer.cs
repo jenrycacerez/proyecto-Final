@@ -75,9 +75,9 @@
             // 
             this.Aceptarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
-            this.Aceptarbutton.Location = new System.Drawing.Point(163, 415);
+            this.Aceptarbutton.Location = new System.Drawing.Point(182, 410);
             this.Aceptarbutton.Name = "Aceptarbutton";
-            this.Aceptarbutton.Size = new System.Drawing.Size(252, 74);
+            this.Aceptarbutton.Size = new System.Drawing.Size(206, 74);
             this.Aceptarbutton.TabIndex = 4;
             this.Aceptarbutton.UseVisualStyleBackColor = true;
             this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
@@ -90,7 +90,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(570, 511);
+            this.ClientSize = new System.Drawing.Size(563, 505);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

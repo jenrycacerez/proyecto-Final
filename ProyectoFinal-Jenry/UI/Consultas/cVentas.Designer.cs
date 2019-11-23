@@ -50,12 +50,14 @@
             // 
             // Imprimirbutton
             // 
+            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Imprimirbutton.Image = global::ProyectoFinal_Jenry.Properties.Resources.siiii;
             this.Imprimirbutton.Location = new System.Drawing.Point(479, 734);
             this.Imprimirbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(248, 84);
+            this.Imprimirbutton.Size = new System.Drawing.Size(248, 93);
             this.Imprimirbutton.TabIndex = 40;
-            this.Imprimirbutton.UseVisualStyleBackColor = true;
+            this.Imprimirbutton.UseVisualStyleBackColor = false;
             this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
             // 
             // ConsultadataGridView

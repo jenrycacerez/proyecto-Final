@@ -198,9 +198,17 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 MyErrorProvider.SetError(ArticulotextBox, "No puede ser vacio.");
                 paso = false;
             }
+
             if (string.IsNullOrWhiteSpace(ProveedorcomboBox.Text))
             {
                 MyErrorProvider.SetError(ProveedorcomboBox, "No puede ser vacio.");
+                paso = false;
+            }
+
+            if (Convert.ToInt32(CantidadtextBox.Text) <= 0)
+            {
+                MyErrorProvider.SetError(CantidadtextBox, "El cantidad Precio no puede estar menor igual 0");
+                CantidadtextBox.Focus();
                 paso = false;
             }
             if (string.IsNullOrWhiteSpace(MarcatextBox.Text))
