@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal_Jenry.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace ProyectoFinal_Jenry
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MenuForm());
+                Application.Run(new Login());
             }
             catch { }
         }

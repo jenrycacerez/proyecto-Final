@@ -32,16 +32,16 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
             if (usuario.Exists(x => x.Usuario.Equals(username)))
             {
-                if (usuario.Exists(x => x.Clave.Equals(Eramake.eCryptography.Encrypt(password))))
-                {
-                    List<Usuarios> id = Repositorio.GetList(U => U.Usuario == UsuariotextBox.Text);
-                    MenuForm f = new MenuForm(id[0].UsuarioId);
+              if (usuario.Exists(x => x.Clave.Equals(Eramake.eCryptography.Encrypt(password))))
+              {
+                   List<Usuarios> id = Repositorio.GetList(U => U.Usuario == UsuariotextBox.Text);
+                   MenuForm f = new MenuForm(id[0].UsuarioId);
                     f.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Clave incorrecta.", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Clave incorrecta.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -81,12 +81,12 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 Repositorio.Guardar(new Usuarios()
                 {
                     Usuario = "administrador",
-                    Clave = Eramake.eCryptography.Encrypt("administrador"),
+                   // Clave = Eramake.eCryptography.Encrypt("administrador"),
                     Nombres = "Jenry Cacerez",
                     Email = "Jenrybrown@hotmail.com",
                     FechaCreacion = DateTime.Now
                 });
-                MetroFramework.MetroMessageBox.Show(this, "Al no existir usuario(s) se ha creado uno por defecto.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               // MetroFramework.MetroMessageBox.Show(this, "Al no existir usuario(s) se ha creado uno por defecto.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
         }

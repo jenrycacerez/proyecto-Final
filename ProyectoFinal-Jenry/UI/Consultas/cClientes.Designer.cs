@@ -78,7 +78,7 @@
             // 
             // CriteriotextBox
             // 
-            this.CriteriotextBox.Location = new System.Drawing.Point(297, 80);
+            this.CriteriotextBox.Location = new System.Drawing.Point(300, 59);
             this.CriteriotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CriteriotextBox.Name = "CriteriotextBox";
             this.CriteriotextBox.Size = new System.Drawing.Size(300, 26);
@@ -112,7 +112,7 @@
             // 
             this.Consultarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Consultarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Consultarbutton.Image")));
-            this.Consultarbutton.Location = new System.Drawing.Point(605, 62);
+            this.Consultarbutton.Location = new System.Drawing.Point(608, 41);
             this.Consultarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Consultarbutton.Name = "Consultarbutton";
             this.Consultarbutton.Size = new System.Drawing.Size(76, 63);
@@ -131,7 +131,7 @@
             "Cedula",
             "Telefono",
             "Direccion"});
-            this.FiltrocomboBox.Location = new System.Drawing.Point(19, 82);
+            this.FiltrocomboBox.Location = new System.Drawing.Point(22, 61);
             this.FiltrocomboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FiltrocomboBox.Name = "FiltrocomboBox";
             this.FiltrocomboBox.Size = new System.Drawing.Size(260, 28);
@@ -180,7 +180,7 @@
             // 
             this.HastadateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.HastadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HastadateTimePicker.Location = new System.Drawing.Point(298, 86);
+            this.HastadateTimePicker.Location = new System.Drawing.Point(294, 65);
             this.HastadateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HastadateTimePicker.Name = "HastadateTimePicker";
             this.HastadateTimePicker.Size = new System.Drawing.Size(142, 26);
@@ -190,7 +190,7 @@
             // 
             this.DesdedateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.DesdedateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DesdedateTimePicker.Location = new System.Drawing.Point(80, 86);
+            this.DesdedateTimePicker.Location = new System.Drawing.Point(76, 65);
             this.DesdedateTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DesdedateTimePicker.Name = "DesdedateTimePicker";
             this.DesdedateTimePicker.Size = new System.Drawing.Size(142, 26);
@@ -199,7 +199,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 86);
+            this.label1.Location = new System.Drawing.Point(10, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 20);
@@ -209,7 +209,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 90);
+            this.label2.Location = new System.Drawing.Point(232, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 20);

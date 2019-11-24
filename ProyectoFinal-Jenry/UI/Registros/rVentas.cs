@@ -19,10 +19,12 @@ namespace ProyectoFinal_Jenry.UI.Registros
         public rVentas(int id)
         {
             InitializeComponent();
-            Cliente();
-            Articulo();
+         //   Cliente();
+          //  Articulo();
             this.id = id;
             Detalle = new List<VentasDetalles>();
+            Cliente();
+            Articulo();
         }
 
         private void Cliente()

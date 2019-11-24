@@ -38,60 +38,80 @@ namespace ProyectoFinal_Jenry
         private void RegistrosArticulosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rArticulo rArticulo = new rArticulo(id);
+            rArticulo.MdiParent = this;
+            rArticulo.StartPosition = FormStartPosition.CenterScreen;
             rArticulo.Show();
         }
 
         private void RegistrosClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rClientes rClientes = new rClientes(id);
+            rClientes.MdiParent = this;
+            rClientes.StartPosition = FormStartPosition.CenterScreen;
             rClientes.Show();
         }
 
         private void RegistroUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rUsuarios r = new rUsuarios();
+            r.MdiParent = this;
+            r.StartPosition = FormStartPosition.CenterScreen;
             r.Show();
         }
 
         private void RegistroProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rProveedor rProveedor = new rProveedor(id);
+            rProveedor.MdiParent = this;
+            rProveedor.StartPosition = FormStartPosition.CenterScreen;
             rProveedor.Show();
         }
 
         private void VentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rVentas rVentas = new rVentas(id);
+            rVentas.MdiParent = this;
+            rVentas.StartPosition = FormStartPosition.CenterScreen;
             rVentas.Show();
         }
 
         private void ColsultasDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cVentas cVentas = new cVentas();
+            cVentas.MdiParent = this;
+            cVentas.StartPosition = FormStartPosition.CenterScreen;
             cVentas.Show();
         }
 
         private void ConsultasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             cUsuarios c = new cUsuarios();
+            c.MdiParent = this;
+            c.StartPosition = FormStartPosition.CenterScreen;
             c.Show();
         }
 
         private void ConsultasDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cProveedor cProveedor = new cProveedor();
+            cProveedor.MdiParent = this;
+            cProveedor.StartPosition = FormStartPosition.CenterScreen;
             cProveedor.Show();
         }
 
         private void ConsultasDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cClientes cClientes = new cClientes();
+            cClientes.MdiParent = this;
+            cClientes.StartPosition = FormStartPosition.CenterScreen;
             cClientes.Show();
         }
 
         private void ConsultasDeArticulosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cArticulo cArticulo = new cArticulo();
+            cArticulo.MdiParent = this;
+            cArticulo.StartPosition = FormStartPosition.CenterScreen;
             cArticulo.Show();
         }
 
