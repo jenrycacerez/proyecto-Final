@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,38 +21,61 @@ namespace ProyectoFinal_Jenry.UI.Registros
         {
             InitializeComponent();
         }
-        public void Logins()
-        {
-            RepositorioBase<Usuarios> Repositorio = new RepositorioBase<Usuarios>();
-            Expression<Func<Usuarios, bool>> filtro = x => true;
-            List<Usuarios> usuario = new List<Usuarios>();
-            var username = UsuariotextBox.Text;
-            var password = ClavetextBox.Text;
-            filtro = x => x.Usuario.Equals(username);
-            usuario = Repositorio.GetList(filtro);
 
-            if (usuario.Exists(x => x.Usuario.Equals(username)))
+
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wMsg, int wParam, int lParam);
+
+
+
+        private bool ValidarCampos()
+        {
+            bool paso = true;
+
+            errorProvider.Clear(); ;
+
+
+            if (string.IsNullOrWhiteSpace(UsuariotextBox.Text))
             {
-              if (usuario.Exists(x => x.Clave.Equals(Eramake.eCryptography.Encrypt(password))))
-              {
-                   List<Usuarios> id = Repositorio.GetList(U => U.Usuario == UsuariotextBox.Text);
-                   MenuForm f = new MenuForm(id[0].UsuarioId);
-                    f.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Clave incorrecta.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                errorProvider.SetError(UsuariotextBox, "Este campo es obligatorio");
+                UsuariotextBox.Focus();
+                paso = false;
             }
-            else
+
+
+            if (string.IsNullOrWhiteSpace(ClavetextBox.Text))
             {
-                if (UsuariotextBox.Text == string.Empty || ClavetextBox.Text == string.Empty)
-                    MessageBox.Show("Ingrese en todos los campos.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (!usuario.Exists(x => x.Usuario.Equals(username)))
-                    MessageBox.Show("Usuario no existe.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                errorProvider.SetError(ClavetextBox, " Este campo es obligtorio!! ");
+                ClavetextBox.Focus();
+                paso = false;
             }
+
+            return paso;
+        }
+
+        private bool ValidarLogin()
+        {
+            bool paso = false;
+
+            if (UsuariotextBox.Text == "Admin" && ClavetextBox.Text == "12345678")
+            {
+                paso = true;
+            }
+
+            return paso;
+        }
+
+
+      
+
+        private void Buttonnuevo_Click(object sender, EventArgs e)
+        {
+           UsuariotextBox.Text = string.Empty;
+            ClavetextBox.Text = string.Empty;
+            errorProvider.Clear();
         }
 
 
@@ -68,12 +92,25 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Logins();
+            if (!ValidarCampos())
+            {
+                return;
+            }
+
+            if (!ValidarLogin())
+            {
+                MessageBox.Show("Usuario No Valido", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            MenuForm main = new MenuForm(1);
+            Hide();
+            main.ShowDialog();
+            Dispose();
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            RepositorioBase<Usuarios> Repositorio = new RepositorioBase<Usuarios>();
+           RepositorioBase<Usuarios> Repositorio = new RepositorioBase<Usuarios>();
             List<Usuarios> user = new List<Usuarios>();
             user = Repositorio.GetList(p => true);
             if (user.Count == 0)
@@ -88,6 +125,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 });
                // MetroFramework.MetroMessageBox.Show(this, "Al no existir usuario(s) se ha creado uno por defecto.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
+                
             }
         }
     }

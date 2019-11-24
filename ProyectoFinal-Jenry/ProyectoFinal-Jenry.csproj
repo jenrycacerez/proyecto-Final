@@ -165,6 +165,12 @@
     <Compile Include="UI\Reporte\FormularioUsuarios.Designer.cs">
       <DependentUpon>FormularioUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reporte\FormularioVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reporte\FormularioVentas.Designer.cs">
+      <DependentUpon>FormularioVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Reporte\rptArticulos.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -193,6 +199,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptUsuarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Reporte\rptVentas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptVentas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="MenuForm.resx">
@@ -251,6 +263,9 @@
     <EmbeddedResource Include="UI\Reporte\FormularioUsuarios.resx">
       <DependentUpon>FormularioUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reporte\FormularioVentas.resx">
+      <DependentUpon>FormularioVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\rptArticulos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptArticulos.cs</LastGenOutput>
@@ -269,6 +284,10 @@
     <EmbeddedResource Include="UI\Reporte\rptUsuarios.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptUsuarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reporte\rptVentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptVentas.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
