@@ -327,6 +327,23 @@ namespace ProyectoFinal_Jenry.UI.Registros
         {
 
         }
+
+        private void Imprimirbutton_Click(object sender, EventArgs e)
+        {
+            if (DetalledataGridView.RowCount == 0)
+            {
+                MessageBox.Show("No se puede imprimir");
+                return;
+            }
+            else
+            {
+                var listado = new List<VentasDetalles>();
+                RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
+                listado = rListado.GetList(p => true);
+                Reporte.FormularioFactura frm = new Reporte.FormularioFactura(listado);
+                frm.ShowDialog();
+            }
+        }
     }
 
       
