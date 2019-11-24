@@ -16,15 +16,16 @@ namespace ProyectoFinal_Jenry
     public partial class MenuForm : Form
     {
         public int id { get; set; }
-        public MenuForm(int id)
+        public MenuForm()
         {
 
-            this.id = id;
+        
             InitializeComponent();
 
             this.Visible = false;
             Login login = new Login();
             login.ShowDialog();
+            this.id = login.IdForma;
             if (login.Valido)
             {
                 this.Visible = true;
@@ -136,7 +137,7 @@ namespace ProyectoFinal_Jenry
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-
+          
         }
     }
 }

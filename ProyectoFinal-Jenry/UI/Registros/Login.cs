@@ -17,6 +17,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
     public partial class Login : Form
     {
         public bool Valido = false;
+        public int IdForma = 0;
         public Login()
         {
             InitializeComponent();
@@ -24,11 +25,46 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
 
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd, int wMsg, int wParam, int lParam);
+        public void Logins()
+        {
+            RepositorioBase<Usuarios> Repositorio = new RepositorioBase<Usuarios>();
+            Expression<Func<Usuarios, bool>> filtro = x => true;
+            List<Usuarios> usuario = new List<Usuarios>();
+            var username = UsuariotextBox.Text;
+            var password = ClavetextBox.Text;
+            filtro = x => x.Usuario.Equals(username);
+            usuario = Repositorio.GetList(filtro);
 
+            if (usuario.Exists(x => x.Usuario.Equals(username)))
+            {
+                if (usuario[0].Clave== Eramake.eCryptography.Encrypt(password))
+                {
+       
+                    IdForma= usuario[0].UsuarioId;
+                    Valido = true;
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Clave incorrecta.", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            else if (Eramake.eCryptography.Encrypt(password) == Eramake.eCryptography.Encrypt("123456") && username.ToLower().Equals("administrador"))
+            {
+                IdForma = 0;
+                Valido = true;
+                this.Close();
+              
+            }
+            else
+            {
+                if (UsuariotextBox.Text == string.Empty || ClavetextBox.Text == string.Empty)
+                    MessageBox.Show("Ingrese en todos los campos.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else if (!usuario.Exists(x => x.Usuario.Equals(username)))
+                    MessageBox.Show("Usuario no existe.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
 
         private bool ValidarCampos()
@@ -56,56 +92,11 @@ namespace ProyectoFinal_Jenry.UI.Registros
             return paso;
         }
 
-        private bool ValidarLogin()
-        {
-            bool paso = false;
-
-            if (UsuariotextBox.Text == "Admin" && ClavetextBox.Text == "12345678")
-            {
-                paso = true;
-            }
-
-            return paso;
-        }
-
-
-      
-
-        private void Buttonnuevo_Click(object sender, EventArgs e)
-        {
-           UsuariotextBox.Text = string.Empty;
-            ClavetextBox.Text = string.Empty;
-            errorProvider.Clear();
-        }
-
-
-
-        private void Aceptarbutton_Click(object sender, EventArgs e)
-        {
-            //Llamar Base de datos pasandole Usuario y Clave
-           
-            //Si encuentra Registro
-         //   Valido = true;
-           // this.Close();
-
-        }
-
+       
+       
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (!ValidarCampos())
-            {
-                return;
-            }
-
-            if (!ValidarLogin())
-            {
-                MessageBox.Show("Usuario No Valido", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            MenuForm main = new MenuForm(1);
-            Hide();
-            main.ShowDialog();
-            Dispose();
+            Logins();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -118,7 +109,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 Repositorio.Guardar(new Usuarios()
                 {
                     Usuario = "administrador",
-                   // Clave = Eramake.eCryptography.Encrypt("administrador"),
+                    Clave = Eramake.eCryptography.Encrypt("123456"),
                     Nombres = "Jenry Cacerez",
                     Email = "Jenrybrown@hotmail.com",
                     FechaCreacion = DateTime.Now

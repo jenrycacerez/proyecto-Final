@@ -38,7 +38,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             usuarios.UsuarioId = Convert.ToInt32(IDnumericUpDown.Value);
             usuarios.Nombres = NombrestextBox.Text;
             usuarios.Usuario = NombreUsuariotextBox.Text;
-            usuarios.Clave = ClavetextBox.Text;
+            usuarios.Clave = Eramake.eCryptography.Encrypt(ClavetextBox.Text);
             usuarios.Email = EmailtextBox.Text;
             usuarios.FechaCreacion = FechaCreaciondateTimePicker.Value;
 
@@ -51,8 +51,8 @@ namespace ProyectoFinal_Jenry.UI.Registros
             IDnumericUpDown.Value = usuarios.UsuarioId;
             NombrestextBox.Text = usuarios.Nombres;
             NombreUsuariotextBox.Text = usuarios.Usuario;
-            ClavetextBox.Text = usuarios.Clave;
-            ConfirmartextBox.Text = usuarios.Clave;
+            ClavetextBox.Text = Eramake.eCryptography.Decrypt(usuarios.Clave); 
+            ConfirmartextBox.Text = Eramake.eCryptography.Decrypt(usuarios.Clave); 
             EmailtextBox.Text = usuarios.Email;
             FechaCreaciondateTimePicker.Value = usuarios.FechaCreacion;
         }

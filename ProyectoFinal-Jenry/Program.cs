@@ -19,9 +19,9 @@ namespace ProyectoFinal_Jenry
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Login());
+                Application.Run(new MenuForm());
             }
-            catch { }
+            catch  { }
         }
     }
 }
