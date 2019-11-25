@@ -222,10 +222,10 @@
             this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(382, 477);
+            this.Eliminarbutton.Location = new System.Drawing.Point(372, 477);
             this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(127, 85);
+            this.Eliminarbutton.Size = new System.Drawing.Size(137, 85);
             this.Eliminarbutton.TabIndex = 34;
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
