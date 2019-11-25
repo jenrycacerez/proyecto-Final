@@ -1,5 +1,6 @@
 ﻿using ProyectoFinal_Jenry.BLL;
 using ProyectoFinal_Jenry.Entidades;
+using ProyectoFinal_Jenry.UI.Reporte;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -157,10 +158,10 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             }
             else
             {
-                var listado = new List<Clientes>();
-                RepositorioBase<Clientes> rListado = new RepositorioBase<Clientes>();
-                listado = rListado.GetList(p => true);
-                Reporte.FormularioCliente frm = new Reporte.FormularioCliente(listado);
+               // var listado = new List<Clientes>();
+               // RepositorioBase<Clientes> rListado = new RepositorioBase<Clientes>();
+               // listado = rListado.GetList(p => true);
+                FormularioCliente frm = new FormularioCliente(Lista);
                 frm.ShowDialog();
             }
 

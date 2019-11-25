@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoFinal_Jenry.UI.Reporte;
 
 namespace ProyectoFinal_Jenry.UI.Consultas
 {
@@ -290,10 +291,10 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             }
             else
             {
-                var listado = new List<Articulos>();
-                RepositorioBase<Articulos> rListado = new RepositorioBase<Articulos>();
-                listado = rListado.GetList(p => true);
-                Reporte.FormularioArticulos frm = new Reporte.FormularioArticulos(listado);
+               // var listado = new List<Articulos>();
+               // RepositorioBase<Articulos> rListado = new RepositorioBase<Articulos>();
+              //  listado = rListado.GetList(p => true);
+                FormularioArticulos frm = new FormularioArticulos(Lista);
                 frm.ShowDialog();
             }
 

@@ -1,5 +1,6 @@
 ﻿using ProyectoFinal_Jenry.BLL;
 using ProyectoFinal_Jenry.Entidades;
+using ProyectoFinal_Jenry.UI.Reporte;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
         public rVentas(int id)
         {
             InitializeComponent();
-         //   Cliente();
+         //  Cliente();
           //  Articulo();
             this.id = id;
             Detalle = new List<VentasDetalles>();
@@ -355,10 +356,10 @@ namespace ProyectoFinal_Jenry.UI.Registros
             else
             {
 
-                var listado = new List<VentasDetalles>();
-                RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
-                listado = rListado.GetList(p => true);
-                Reporte.FormularioFacturas frm = new Reporte.FormularioFacturas(listado);
+              //  var listado = new List<VentasDetalles>();
+               // RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
+                //listado = rListado.GetList(p => true);
+               FormularioFacturas frm = new FormularioFacturas(Detalle);
                 frm.ShowDialog();
             }
         }

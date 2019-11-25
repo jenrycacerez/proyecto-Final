@@ -57,6 +57,7 @@
             // 
             // EmailtextBox
             // 
+            this.EmailtextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailtextBox.Location = new System.Drawing.Point(165, 432);
             this.EmailtextBox.Name = "EmailtextBox";
             this.EmailtextBox.Size = new System.Drawing.Size(320, 26);
@@ -64,6 +65,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(27, 432);
             this.label8.Name = "label8";
@@ -73,6 +75,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(27, 331);
             this.label7.Name = "label7";
@@ -82,6 +85,7 @@
             // 
             // ClmaskedTextBox
             // 
+            this.ClmaskedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ClmaskedTextBox.Location = new System.Drawing.Point(165, 328);
             this.ClmaskedTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ClmaskedTextBox.Mask = "(999) 000-0000";
@@ -91,6 +95,7 @@
             // 
             // FechadateTimePicker
             // 
+            this.FechadateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
             this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechadateTimePicker.Location = new System.Drawing.Point(165, 119);
@@ -101,6 +106,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(27, 124);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -111,6 +117,7 @@
             // 
             // DirecciontextBox
             // 
+            this.DirecciontextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DirecciontextBox.Location = new System.Drawing.Point(165, 380);
             this.DirecciontextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DirecciontextBox.Name = "DirecciontextBox";
@@ -119,6 +126,7 @@
             // 
             // TlfmaskedTextBox
             // 
+            this.TlfmaskedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.TlfmaskedTextBox.Location = new System.Drawing.Point(165, 276);
             this.TlfmaskedTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TlfmaskedTextBox.Mask = "(999) 000-0000";
@@ -128,6 +136,7 @@
             // 
             // CedulamaskedTextBox
             // 
+            this.CedulamaskedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CedulamaskedTextBox.Location = new System.Drawing.Point(166, 217);
             this.CedulamaskedTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CedulamaskedTextBox.Mask = "000-0000000-0";
@@ -137,6 +146,7 @@
             // 
             // NombrestextBox
             // 
+            this.NombrestextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.NombrestextBox.Location = new System.Drawing.Point(166, 161);
             this.NombrestextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NombrestextBox.Name = "NombrestextBox";
@@ -146,6 +156,7 @@
             // 
             // IDnumericUpDown
             // 
+            this.IDnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.IDnumericUpDown.Location = new System.Drawing.Point(165, 67);
             this.IDnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
@@ -154,6 +165,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(27, 380);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -164,6 +176,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(27, 276);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -174,6 +187,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(27, 220);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -184,6 +198,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 164);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -194,6 +209,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(27, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -208,6 +224,7 @@
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
             this.Buscarbutton.Location = new System.Drawing.Point(340, 49);
@@ -220,6 +237,7 @@
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
             this.Nuevobutton.Location = new System.Drawing.Point(31, 506);
@@ -234,6 +252,7 @@
             // 
             // Eliminarbutton
             // 
+            this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
             this.Eliminarbutton.Location = new System.Drawing.Point(360, 506);
@@ -248,6 +267,7 @@
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Guardarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
             this.Guardarbutton.Location = new System.Drawing.Point(199, 506);

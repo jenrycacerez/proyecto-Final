@@ -51,7 +51,7 @@
             // Imprimirbutton
             // 
             this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Imprimirbutton.Image = global::ProyectoFinal_Jenry.Properties.Resources.siiii;
+            this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
             this.Imprimirbutton.Location = new System.Drawing.Point(479, 734);
             this.Imprimirbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Imprimirbutton.Name = "Imprimirbutton";
@@ -219,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1196, 832);
             this.Controls.Add(this.Imprimirbutton);
             this.Controls.Add(this.ConsultadataGridView);

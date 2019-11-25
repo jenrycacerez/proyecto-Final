@@ -39,11 +39,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.CostonumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ProveedorcomboBox = new System.Windows.Forms.ComboBox();
-            this.Eliminarbutton = new System.Windows.Forms.Button();
-            this.Buscarbutton = new System.Windows.Forms.Button();
-            this.Nuevobutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
-            this.AddProveedorbutton = new System.Windows.Forms.Button();
             this.PrecionumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.CodigonumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.IDnumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -61,6 +56,11 @@
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.Eliminarbutton = new System.Windows.Forms.Button();
+            this.Buscarbutton = new System.Windows.Forms.Button();
+            this.Nuevobutton = new System.Windows.Forms.Button();
+            this.Guardarbutton = new System.Windows.Forms.Button();
+            this.AddProveedorbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CostonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).BeginInit();
@@ -71,6 +71,7 @@
             // 
             // ArticulotextBox
             // 
+            this.ArticulotextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ArticulotextBox.Location = new System.Drawing.Point(136, 139);
             this.ArticulotextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ArticulotextBox.Name = "ArticulotextBox";
@@ -79,6 +80,7 @@
             // 
             // ItbiscomboBox
             // 
+            this.ItbiscomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ItbiscomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ItbiscomboBox.FormattingEnabled = true;
             this.ItbiscomboBox.Items.AddRange(new object[] {
@@ -94,6 +96,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(42, 539);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -104,6 +107,7 @@
             // 
             // ItbistextBox
             // 
+            this.ItbistextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ItbistextBox.Location = new System.Drawing.Point(413, 536);
             this.ItbistextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ItbistextBox.Name = "ItbistextBox";
@@ -113,6 +117,7 @@
             // 
             // GananciatextBox
             // 
+            this.GananciatextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.GananciatextBox.Location = new System.Drawing.Point(136, 484);
             this.GananciatextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GananciatextBox.Name = "GananciatextBox";
@@ -122,6 +127,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(42, 487);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -132,6 +138,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(43, 434);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -142,6 +149,7 @@
             // 
             // CostonumericUpDown
             // 
+            this.CostonumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CostonumericUpDown.DecimalPlaces = 2;
             this.CostonumericUpDown.Increment = new decimal(new int[] {
             0,
@@ -163,6 +171,7 @@
             // 
             // ProveedorcomboBox
             // 
+            this.ProveedorcomboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ProveedorcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProveedorcomboBox.FormattingEnabled = true;
             this.ProveedorcomboBox.Location = new System.Drawing.Point(136, 189);
@@ -171,78 +180,9 @@
             this.ProveedorcomboBox.Size = new System.Drawing.Size(376, 28);
             this.ProveedorcomboBox.TabIndex = 56;
             // 
-            // Eliminarbutton
-            // 
-            this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
-            this.Eliminarbutton.Location = new System.Drawing.Point(413, 604);
-            this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Eliminarbutton.Name = "Eliminarbutton";
-            this.Eliminarbutton.Size = new System.Drawing.Size(159, 93);
-            this.Eliminarbutton.TabIndex = 55;
-            this.Eliminarbutton.Text = "Eliminar";
-            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Eliminarbutton.UseVisualStyleBackColor = false;
-            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
-            // 
-            // Buscarbutton
-            // 
-            this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
-            this.Buscarbutton.Location = new System.Drawing.Point(321, 8);
-            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
-            this.Buscarbutton.TabIndex = 54;
-            this.Buscarbutton.UseVisualStyleBackColor = false;
-            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
-            // 
-            // Nuevobutton
-            // 
-            this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
-            this.Nuevobutton.Location = new System.Drawing.Point(47, 604);
-            this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Nuevobutton.Name = "Nuevobutton";
-            this.Nuevobutton.Size = new System.Drawing.Size(164, 93);
-            this.Nuevobutton.TabIndex = 53;
-            this.Nuevobutton.Text = "Nuevo";
-            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Nuevobutton.UseVisualStyleBackColor = false;
-            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
-            // 
-            // Guardarbutton
-            // 
-            this.Guardarbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
-            this.Guardarbutton.Location = new System.Drawing.Point(231, 604);
-            this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(158, 93);
-            this.Guardarbutton.TabIndex = 52;
-            this.Guardarbutton.Text = "Guardar";
-            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Guardarbutton.UseVisualStyleBackColor = false;
-            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
-            // 
-            // AddProveedorbutton
-            // 
-            this.AddProveedorbutton.BackColor = System.Drawing.Color.White;
-            this.AddProveedorbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AddProveedorbutton.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddProveedorbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.AddProveedorbutton.Image = ((System.Drawing.Image)(resources.GetObject("AddProveedorbutton.Image")));
-            this.AddProveedorbutton.Location = new System.Drawing.Point(522, 189);
-            this.AddProveedorbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.AddProveedorbutton.Name = "AddProveedorbutton";
-            this.AddProveedorbutton.Size = new System.Drawing.Size(50, 32);
-            this.AddProveedorbutton.TabIndex = 50;
-            this.AddProveedorbutton.Text = "+";
-            this.AddProveedorbutton.UseVisualStyleBackColor = false;
-            this.AddProveedorbutton.Click += new System.EventHandler(this.AddProveedorbutton_Click);
-            // 
             // PrecionumericUpDown
             // 
+            this.PrecionumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.PrecionumericUpDown.DecimalPlaces = 2;
             this.PrecionumericUpDown.Increment = new decimal(new int[] {
             0,
@@ -264,6 +204,7 @@
             // 
             // CodigonumericUpDown
             // 
+            this.CodigonumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CodigonumericUpDown.Location = new System.Drawing.Point(136, 86);
             this.CodigonumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.CodigonumericUpDown.Maximum = new decimal(new int[] {
@@ -277,9 +218,7 @@
             // 
             // IDnumericUpDown
             // 
-            this.IDnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.IDnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.IDnumericUpDown.Location = new System.Drawing.Point(136, 27);
             this.IDnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
@@ -288,6 +227,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(329, 539);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -298,6 +238,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(42, 236);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -308,6 +249,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(43, 380);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -318,6 +260,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(42, 189);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -328,6 +271,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(42, 139);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -338,6 +282,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(42, 86);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -348,6 +293,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(42, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -358,6 +304,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(42, 336);
             this.label5.Name = "label5";
@@ -367,6 +314,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(43, 286);
             this.label12.Name = "label12";
@@ -376,6 +324,7 @@
             // 
             // ModelotextBox
             // 
+            this.ModelotextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ModelotextBox.Location = new System.Drawing.Point(136, 330);
             this.ModelotextBox.Name = "ModelotextBox";
             this.ModelotextBox.Size = new System.Drawing.Size(434, 26);
@@ -383,6 +332,7 @@
             // 
             // MarcatextBox
             // 
+            this.MarcatextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.MarcatextBox.Location = new System.Drawing.Point(136, 280);
             this.MarcatextBox.Name = "MarcatextBox";
             this.MarcatextBox.Size = new System.Drawing.Size(434, 26);
@@ -394,6 +344,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(413, 21);
@@ -403,6 +354,7 @@
             // 
             // CantidadnumericUpDown
             // 
+            this.CantidadnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CantidadnumericUpDown.Location = new System.Drawing.Point(136, 236);
             this.CantidadnumericUpDown.Maximum = new decimal(new int[] {
             9999999,
@@ -412,6 +364,81 @@
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
             this.CantidadnumericUpDown.Size = new System.Drawing.Size(434, 26);
             this.CantidadnumericUpDown.TabIndex = 73;
+            // 
+            // Eliminarbutton
+            // 
+            this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Eliminarbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Eliminarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton.Image")));
+            this.Eliminarbutton.Location = new System.Drawing.Point(413, 604);
+            this.Eliminarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Eliminarbutton.Name = "Eliminarbutton";
+            this.Eliminarbutton.Size = new System.Drawing.Size(159, 93);
+            this.Eliminarbutton.TabIndex = 55;
+            this.Eliminarbutton.Text = "Eliminar";
+            this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Eliminarbutton.UseVisualStyleBackColor = false;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
+            // 
+            // Buscarbutton
+            // 
+            this.Buscarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
+            this.Buscarbutton.Location = new System.Drawing.Point(321, 8);
+            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Buscarbutton.Name = "Buscarbutton";
+            this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
+            this.Buscarbutton.TabIndex = 54;
+            this.Buscarbutton.UseVisualStyleBackColor = false;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
+            // 
+            // Nuevobutton
+            // 
+            this.Nuevobutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Nuevobutton.Image = ((System.Drawing.Image)(resources.GetObject("Nuevobutton.Image")));
+            this.Nuevobutton.Location = new System.Drawing.Point(47, 604);
+            this.Nuevobutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Nuevobutton.Name = "Nuevobutton";
+            this.Nuevobutton.Size = new System.Drawing.Size(164, 93);
+            this.Nuevobutton.TabIndex = 53;
+            this.Nuevobutton.Text = "Nuevo";
+            this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Nuevobutton.UseVisualStyleBackColor = false;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
+            // 
+            // Guardarbutton
+            // 
+            this.Guardarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Guardarbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Guardarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton.Image")));
+            this.Guardarbutton.Location = new System.Drawing.Point(231, 604);
+            this.Guardarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Guardarbutton.Name = "Guardarbutton";
+            this.Guardarbutton.Size = new System.Drawing.Size(158, 93);
+            this.Guardarbutton.TabIndex = 52;
+            this.Guardarbutton.Text = "Guardar";
+            this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Guardarbutton.UseVisualStyleBackColor = false;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
+            // 
+            // AddProveedorbutton
+            // 
+            this.AddProveedorbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddProveedorbutton.BackColor = System.Drawing.Color.White;
+            this.AddProveedorbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddProveedorbutton.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddProveedorbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.AddProveedorbutton.Image = ((System.Drawing.Image)(resources.GetObject("AddProveedorbutton.Image")));
+            this.AddProveedorbutton.Location = new System.Drawing.Point(522, 189);
+            this.AddProveedorbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddProveedorbutton.Name = "AddProveedorbutton";
+            this.AddProveedorbutton.Size = new System.Drawing.Size(50, 32);
+            this.AddProveedorbutton.TabIndex = 50;
+            this.AddProveedorbutton.Text = "+";
+            this.AddProveedorbutton.UseVisualStyleBackColor = false;
+            this.AddProveedorbutton.Click += new System.EventHandler(this.AddProveedorbutton_Click);
             // 
             // rArticulo
             // 
