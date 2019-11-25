@@ -65,7 +65,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             CodigonumericUpDown.Value = 0;
             ArticulotextBox.Text = null;
             ProveedorcomboBox.Text = null;
-            CantidadtextBox.Text = null;
+            CantidadnumericUpDown.Value = 0;
             MarcatextBox.Text = string.Empty;
             ModelotextBox.Text = string.Empty;
             PrecionumericUpDown.Value = 0;
@@ -89,11 +89,9 @@ namespace ProyectoFinal_Jenry.UI.Registros
             CodigonumericUpDown.Value = p.Codigo;
             ArticulotextBox.Text = p.Articulo;
             ProveedorcomboBox.Text = p.Proveedor;
-            
-            CantidadtextBox.Text = p.Cantidad.ToString();
+            CantidadnumericUpDown.Value = p.Cantidad;
             MarcatextBox.Text = p.Marca;
             ModelotextBox.Text = p.Modelo;
-
             PrecionumericUpDown.Value = p.Precio;
             CostonumericUpDown.Value = p.Costo;
             GananciatextBox.Text = p.Ganancia.ToString();
@@ -107,7 +105,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             p.Codigo = Convert.ToInt32(CodigonumericUpDown.Value);
             p.Articulo = ArticulotextBox.Text;
             p.Proveedor = ProveedorcomboBox.Text;
-            
+            p.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
             p.Precio = PrecionumericUpDown.Value;
             p.Marca = MarcatextBox.Text;
             p.Modelo = ModelotextBox.Text;
@@ -205,10 +203,9 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 paso = false;
             }
 
-            if (Convert.ToInt32(CantidadtextBox.Text) <= 0)
+            if (CantidadnumericUpDown.Value == 0)
             {
-                MyErrorProvider.SetError(CantidadtextBox, "El cantidad Precio no puede estar menor igual 0");
-                CantidadtextBox.Focus();
+                MyErrorProvider.SetError(CantidadnumericUpDown, "No puede ser 0.");
                 paso = false;
             }
             if (string.IsNullOrWhiteSpace(MarcatextBox.Text))

@@ -20,8 +20,8 @@ namespace ProyectoFinal_Jenry
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new MenuForm());
-            }
-            catch  { }
+           }
+           catch  { }
         }
     }
 }

@@ -272,6 +272,19 @@ namespace ProyectoFinal_Jenry.UI.Registros
             if (ProductocomboBox.SelectedValue != null)
             {
                 int d = (int)ProductocomboBox.SelectedValue;
+                RepositorioBase<Articulos> Repositorio = new RepositorioBase<Articulos>();
+                Articulos prod = new Articulos();
+                int id;
+
+
+                prod = Repositorio.Buscar(d);
+
+                if (CantidadnumericUpDown.Value > prod.Cantidad)
+                {
+                 
+                    MessageBox.Show("Cantidad no disponible.", "Inf", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
 
                 foreach (var item in Detalle)
                 {
@@ -337,9 +350,10 @@ namespace ProyectoFinal_Jenry.UI.Registros
             }
             else
             {
+
                 var listado = new List<VentasDetalles>();
                 RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
-                listado = rListado.GetList(p => true);
+                listado = rListado.GetList(p => p.);
                 Reporte.FormularioFactura frm = new Reporte.FormularioFactura(listado);
                 frm.ShowDialog();
             }

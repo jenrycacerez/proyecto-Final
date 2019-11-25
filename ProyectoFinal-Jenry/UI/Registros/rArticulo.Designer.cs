@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rArticulo));
-            this.CantidadtextBox = new System.Windows.Forms.TextBox();
             this.ArticulotextBox = new System.Windows.Forms.TextBox();
             this.ItbiscomboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,20 +60,14 @@
             this.MarcatextBox = new System.Windows.Forms.TextBox();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.CostonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CantidadtextBox
-            // 
-            this.CantidadtextBox.Location = new System.Drawing.Point(136, 233);
-            this.CantidadtextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.CantidadtextBox.Name = "CantidadtextBox";
-            this.CantidadtextBox.Size = new System.Drawing.Size(434, 26);
-            this.CantidadtextBox.TabIndex = 67;
             // 
             // ArticulotextBox
             // 
@@ -284,6 +277,9 @@
             // 
             // IDnumericUpDown
             // 
+            this.IDnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.IDnumericUpDown.Location = new System.Drawing.Point(136, 27);
             this.IDnumericUpDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.IDnumericUpDown.Name = "IDnumericUpDown";
@@ -405,18 +401,25 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(159, 26);
             this.dateTimePicker1.TabIndex = 72;
             // 
+            // CantidadnumericUpDown
+            // 
+            this.CantidadnumericUpDown.Location = new System.Drawing.Point(136, 236);
+            this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
+            this.CantidadnumericUpDown.Size = new System.Drawing.Size(434, 26);
+            this.CantidadnumericUpDown.TabIndex = 73;
+            // 
             // rArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(615, 711);
+            this.Controls.Add(this.CantidadnumericUpDown);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.MarcatextBox);
             this.Controls.Add(this.ModelotextBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.CantidadtextBox);
             this.Controls.Add(this.ArticulotextBox);
             this.Controls.Add(this.ItbiscomboBox);
             this.Controls.Add(this.label11);
@@ -448,14 +451,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox CantidadtextBox;
         private System.Windows.Forms.TextBox ArticulotextBox;
         private System.Windows.Forms.ComboBox ItbiscomboBox;
         private System.Windows.Forms.Label label11;
@@ -486,5 +488,6 @@
         private System.Windows.Forms.TextBox MarcatextBox;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.NumericUpDown CantidadnumericUpDown;
     }
 }
