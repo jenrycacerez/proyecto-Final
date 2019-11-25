@@ -41,8 +41,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Addbutton = new System.Windows.Forms.Button();
-            this.Removerbutton = new System.Windows.Forms.Button();
-            this.Buscarbutton = new System.Windows.Forms.Button();
             this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,12 +53,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TotaltextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Nuevobutton = new System.Windows.Forms.Button();
-            this.Eliminarbutton = new System.Windows.Forms.Button();
-            this.Guardarbutton = new System.Windows.Forms.Button();
             this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.Imprimirbutton = new System.Windows.Forms.Button();
+            this.Nuevobutton = new System.Windows.Forms.Button();
+            this.Eliminarbutton = new System.Windows.Forms.Button();
+            this.Guardarbutton = new System.Windows.Forms.Button();
+            this.Removerbutton = new System.Windows.Forms.Button();
+            this.Buscarbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
@@ -195,35 +195,6 @@
             this.Addbutton.Text = "   + AGREGAR";
             this.Addbutton.UseVisualStyleBackColor = false;
             this.Addbutton.Click += new System.EventHandler(this.Addbutton_Click);
-            // 
-            // Removerbutton
-            // 
-            this.Removerbutton.BackColor = System.Drawing.Color.White;
-            this.Removerbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Removerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Removerbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Removerbutton.Image = ((System.Drawing.Image)(resources.GetObject("Removerbutton.Image")));
-            this.Removerbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Removerbutton.Location = new System.Drawing.Point(122, 641);
-            this.Removerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Removerbutton.Name = "Removerbutton";
-            this.Removerbutton.Size = new System.Drawing.Size(298, 70);
-            this.Removerbutton.TabIndex = 51;
-            this.Removerbutton.Text = "- REMOVER FILA";
-            this.Removerbutton.UseVisualStyleBackColor = false;
-            this.Removerbutton.Click += new System.EventHandler(this.Removerbutton_Click);
-            // 
-            // Buscarbutton
-            // 
-            this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
-            this.Buscarbutton.Location = new System.Drawing.Point(366, 24);
-            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
-            this.Buscarbutton.TabIndex = 50;
-            this.Buscarbutton.UseVisualStyleBackColor = false;
-            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // CantidadnumericUpDown
             // 
@@ -361,6 +332,32 @@
             this.label8.TabIndex = 67;
             this.label8.Text = "TOTAL";
             // 
+            // FechadateTimePicker
+            // 
+            this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechadateTimePicker.Location = new System.Drawing.Point(581, 35);
+            this.FechadateTimePicker.Name = "FechadateTimePicker";
+            this.FechadateTimePicker.Size = new System.Drawing.Size(200, 26);
+            this.FechadateTimePicker.TabIndex = 69;
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
+            // Imprimirbutton
+            // 
+            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
+            this.Imprimirbutton.Location = new System.Drawing.Point(648, 809);
+            this.Imprimirbutton.Name = "Imprimirbutton";
+            this.Imprimirbutton.Size = new System.Drawing.Size(142, 89);
+            this.Imprimirbutton.TabIndex = 70;
+            this.Imprimirbutton.Text = "Imprimir";
+            this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Imprimirbutton.UseVisualStyleBackColor = false;
+            this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
+            // 
             // Nuevobutton
             // 
             this.Nuevobutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -403,38 +400,42 @@
             this.Guardarbutton.UseVisualStyleBackColor = false;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
-            // FechadateTimePicker
+            // Removerbutton
             // 
-            this.FechadateTimePicker.CustomFormat = "dd/MM/yyyy";
-            this.FechadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(581, 35);
-            this.FechadateTimePicker.Name = "FechadateTimePicker";
-            this.FechadateTimePicker.Size = new System.Drawing.Size(200, 26);
-            this.FechadateTimePicker.TabIndex = 69;
+            this.Removerbutton.BackColor = System.Drawing.Color.White;
+            this.Removerbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Removerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Removerbutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Removerbutton.Image = ((System.Drawing.Image)(resources.GetObject("Removerbutton.Image")));
+            this.Removerbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Removerbutton.Location = new System.Drawing.Point(122, 641);
+            this.Removerbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Removerbutton.Name = "Removerbutton";
+            this.Removerbutton.Size = new System.Drawing.Size(298, 70);
+            this.Removerbutton.TabIndex = 51;
+            this.Removerbutton.Text = "- REMOVER FILA";
+            this.Removerbutton.UseVisualStyleBackColor = false;
+            this.Removerbutton.Click += new System.EventHandler(this.Removerbutton_Click);
             // 
-            // MyErrorProvider
+            // Buscarbutton
             // 
-            this.MyErrorProvider.ContainerControl = this;
-            // 
-            // Imprimirbutton
-            // 
-            this.Imprimirbutton.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Imprimirbutton.Image = ((System.Drawing.Image)(resources.GetObject("Imprimirbutton.Image")));
-            this.Imprimirbutton.Location = new System.Drawing.Point(648, 809);
-            this.Imprimirbutton.Name = "Imprimirbutton";
-            this.Imprimirbutton.Size = new System.Drawing.Size(142, 89);
-            this.Imprimirbutton.TabIndex = 70;
-            this.Imprimirbutton.Text = "Imprimir";
-            this.Imprimirbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Imprimirbutton.UseVisualStyleBackColor = false;
-            this.Imprimirbutton.Click += new System.EventHandler(this.Imprimirbutton_Click);
+            this.Buscarbutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Buscarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton.Image")));
+            this.Buscarbutton.Location = new System.Drawing.Point(366, 24);
+            this.Buscarbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Buscarbutton.Name = "Buscarbutton";
+            this.Buscarbutton.Size = new System.Drawing.Size(68, 62);
+            this.Buscarbutton.TabIndex = 50;
+            this.Buscarbutton.UseVisualStyleBackColor = false;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // rVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(913, 904);
+            this.ClientSize = new System.Drawing.Size(913, 943);
             this.Controls.Add(this.Imprimirbutton);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);

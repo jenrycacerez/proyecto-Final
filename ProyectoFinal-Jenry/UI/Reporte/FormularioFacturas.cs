@@ -11,29 +11,25 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal_Jenry.UI.Reporte
 {
-    public partial class FormularioFactura : Form
+    public partial class FormularioFacturas : Form
     {
         private List<VentasDetalles> ListaFactura;
-        public FormularioFactura()
+        public FormularioFacturas()
         {
             InitializeComponent();
         }
-        public FormularioFactura(List<VentasDetalles> ventasD)
+
+        public FormularioFacturas(List<VentasDetalles> ventasD)
         {
             this.ListaFactura = ventasD;
             InitializeComponent();
         }
-        private void CrystalReportViewer1_Load(object sender, EventArgs e)
+        private void FormularioFacturas_Load(object sender, EventArgs e)
         {
+            rptFacturas oFacturas = new rptFacturas();
+            oFacturas.SetDataSource(ListaFactura);
 
-        }
-
-        private void FormularioFactura_Load(object sender, EventArgs e)
-        {
-            rptFactura oFactura = new rptFactura();
-            oFactura.SetDataSource(ListaFactura);
-
-            crystalReportViewer.ReportSource = oFactura;
+            crystalReportViewer.ReportSource = oFacturas;
             crystalReportViewer.Refresh();
         }
     }

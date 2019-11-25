@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal_Jenry.UI.Reporte
 {
-    partial class FormularioFactura
+    partial class FormularioFacturas
     {
         /// <summary>
         /// Required designer variable.
@@ -39,19 +39,18 @@
             this.crystalReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer.Name = "crystalReportViewer";
-            this.crystalReportViewer.Size = new System.Drawing.Size(1054, 658);
+            this.crystalReportViewer.Size = new System.Drawing.Size(1082, 603);
             this.crystalReportViewer.TabIndex = 0;
-            this.crystalReportViewer.Load += new System.EventHandler(this.CrystalReportViewer1_Load);
             // 
-            // FormularioFactura
+            // FormularioFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1054, 658);
+            this.ClientSize = new System.Drawing.Size(1082, 603);
             this.Controls.Add(this.crystalReportViewer);
-            this.Name = "FormularioFactura";
-            this.Text = "FormularioFactura";
-            this.Load += new System.EventHandler(this.FormularioFactura_Load);
+            this.Name = "FormularioFacturas";
+            this.Text = "FormularioFacturas";
+            this.Load += new System.EventHandler(this.FormularioFacturas_Load);
             this.ResumeLayout(false);
 
         }

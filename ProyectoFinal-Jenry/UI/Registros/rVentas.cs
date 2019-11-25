@@ -314,8 +314,12 @@ namespace ProyectoFinal_Jenry.UI.Registros
                     ArticuloId = (int)ProductocomboBox.SelectedValue,
                     Cantidad = (int)CantidadnumericUpDown.Value,
                     Precio = Convert.ToDecimal(PreciotextBox.Text),
-                    Impuesto = p.ITBIS * CantidadnumericUpDown.Value
-                });
+                    Impuesto = p.ITBIS * CantidadnumericUpDown.Value,
+                    Importe = (decimal)CantidadnumericUpDown.Value * Convert.ToDecimal(PreciotextBox.Text),
+                    Total = (p.ITBIS * CantidadnumericUpDown.Value) + (decimal)CantidadnumericUpDown.Value * Convert.ToDecimal(PreciotextBox.Text),
+                    NombreArticulo = ProductocomboBox.Text
+
+                }) ; 
             }
             ProductocomboBox.Text = null;
             PreciotextBox.Text = null;
@@ -353,8 +357,8 @@ namespace ProyectoFinal_Jenry.UI.Registros
 
                 var listado = new List<VentasDetalles>();
                 RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
-                listado = rListado.GetList(p => p.);
-                Reporte.FormularioFactura frm = new Reporte.FormularioFactura(listado);
+                listado = rListado.GetList(p => true);
+                Reporte.FormularioFacturas frm = new Reporte.FormularioFacturas(listado);
                 frm.ShowDialog();
             }
         }

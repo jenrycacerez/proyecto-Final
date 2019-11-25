@@ -156,11 +156,11 @@
     <Compile Include="UI\Reporte\FormularioArticulos.Designer.cs">
       <DependentUpon>FormularioArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Reporte\FormularioFactura.cs">
+    <Compile Include="UI\Reporte\FormularioFacturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Reporte\FormularioFactura.Designer.cs">
-      <DependentUpon>FormularioFactura.cs</DependentUpon>
+    <Compile Include="UI\Reporte\FormularioFacturas.Designer.cs">
+      <DependentUpon>FormularioFacturas.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Reporte\FormularioProveedor.cs">
       <SubType>Form</SubType>
@@ -198,10 +198,10 @@
     <Compile Include="UI\Reporte\FormularioCliente.Designer.cs">
       <DependentUpon>FormularioCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Reporte\rptFactura.cs">
+    <Compile Include="UI\Reporte\rptFacturas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rptFactura.rpt</DependentUpon>
+      <DependentUpon>rptFacturas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UI\Reporte\rptProveedor.cs">
@@ -272,8 +272,8 @@
     <EmbeddedResource Include="UI\Reporte\FormularioArticulos.resx">
       <DependentUpon>FormularioArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Reporte\FormularioFactura.resx">
-      <DependentUpon>FormularioFactura.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Reporte\FormularioFacturas.resx">
+      <DependentUpon>FormularioFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\FormularioProveedor.resx">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
@@ -295,9 +295,9 @@
     <EmbeddedResource Include="UI\Reporte\FormularioCliente.resx">
       <DependentUpon>FormularioCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Reporte\rptFactura.rpt">
+    <EmbeddedResource Include="UI\Reporte\rptFacturas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptFactura.cs</LastGenOutput>
+      <LastGenOutput>rptFacturas.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\rptProveedor.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
