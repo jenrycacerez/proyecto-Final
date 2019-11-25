@@ -1,7 +1,7 @@
 # proyecto-Final
 
 
-Proyecto Final
+# Proyecto Final
 
 
 Este sistema está diseñado para ser utilizado Respuestos de Motores y pasolas con piezas nuevas y usadas permitiéndoles a al repuesto tener el control absoluto de su empresa, permitiendo el registro de las distintas entidades con la que cuente dicha empresa.
@@ -25,7 +25,7 @@ En conclusión, este sistema contiene los módulos de inicio de sesión, registr
 
 <img width="150" alt="usuariog" src="https://user-images.githubusercontent.com/54563282/69565494-fbb5ab00-0fac-11ea-9eea-aef7b47acc02.png">
 
-Herramientas
+# Herramientas
 • Windows 10 64 bits.
 
 • Procesador: Procesador a 2.4 GHz.
@@ -42,11 +42,11 @@ Herramientas
 
  Google Chrome
 
-Autores ✒️
+# Autoros ✒️
 
 Jenry Cacerez Guzman- Trabajo Total
 
-Creador📄
+# Creador📄
 
  (Jenry Cacerez Guzman)
 
