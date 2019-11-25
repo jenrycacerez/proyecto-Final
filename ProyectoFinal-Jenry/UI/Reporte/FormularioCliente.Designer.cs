@@ -35,10 +35,11 @@
             // 
             this.VisorCrystalReport.ActiveViewIndex = -1;
             this.VisorCrystalReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.VisorCrystalReport.Cursor = System.Windows.Forms.Cursors.Default;
             this.VisorCrystalReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VisorCrystalReport.Location = new System.Drawing.Point(0, 0);
             this.VisorCrystalReport.Name = "VisorCrystalReport";
-            this.VisorCrystalReport.Size = new System.Drawing.Size(966, 615);
+            this.VisorCrystalReport.Size = new System.Drawing.Size(1359, 721);
             this.VisorCrystalReport.TabIndex = 0;
             this.VisorCrystalReport.Load += new System.EventHandler(this.VisorCrystalReport_Load);
             // 
@@ -46,10 +47,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 615);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1359, 721);
             this.Controls.Add(this.VisorCrystalReport);
             this.Name = "FormularioCliente";
-            this.Text = "Form1";
+            this.Text = "Formulario Cliente";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

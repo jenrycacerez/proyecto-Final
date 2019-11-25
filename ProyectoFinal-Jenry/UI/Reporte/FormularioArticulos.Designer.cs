@@ -35,10 +35,11 @@
             // 
             this.crystalReportViewer.ActiveViewIndex = -1;
             this.crystalReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer.Name = "crystalReportViewer";
-            this.crystalReportViewer.Size = new System.Drawing.Size(959, 622);
+            this.crystalReportViewer.Size = new System.Drawing.Size(1423, 715);
             this.crystalReportViewer.TabIndex = 0;
             this.crystalReportViewer.Load += new System.EventHandler(this.CrystalReportViewer1_Load);
             // 
@@ -46,10 +47,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(959, 622);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1423, 715);
             this.Controls.Add(this.crystalReportViewer);
             this.Name = "FormularioArticulos";
-            this.Text = "FormularioArticulos";
+            this.Text = "Formulario Articulos";
             this.Load += new System.EventHandler(this.FormularioArticulos_Load);
             this.ResumeLayout(false);
 
