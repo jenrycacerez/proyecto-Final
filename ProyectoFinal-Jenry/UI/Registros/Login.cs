@@ -46,7 +46,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 }
                 else
                 {
-                    MessageBox.Show("Clave incorrecta.", "Supermarket Software", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Clave incorrecta.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }

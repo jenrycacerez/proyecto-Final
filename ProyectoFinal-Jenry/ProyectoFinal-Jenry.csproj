@@ -66,16 +66,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\IRepositorio.cs" />
-    <Compile Include="BLL\RepositorioBase.cs" />
-    <Compile Include="BLL\VentaBLL.cs" />
-    <Compile Include="DAL\Contexto.cs" />
-    <Compile Include="Entidades\Articulos.cs" />
-    <Compile Include="Entidades\Clientes.cs" />
-    <Compile Include="Entidades\Proveedor.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Entidades\Ventas.cs" />
-    <Compile Include="Entidades\VentasDetalles.cs" />
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,7 +315,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\dd\DAL.csproj">
+      <Project>{613f3776-8778-4de5-bca6-009f67be6e10}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ee\Entidades.csproj">
+      <Project>{3C669B27-8C28-4473-AF4F-382CE2F02BBB}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ksljhfgjs\BLL.csproj">
+      <Project>{0aa28d35-4db2-4ca9-af2a-acd6d798c873}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
