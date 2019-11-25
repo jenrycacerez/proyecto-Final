@@ -3,7 +3,7 @@
 
 Proyecto Final
 
-About_icon-icons com_55974
+
 Este sistema está diseñado para ser utilizado Respuestos de Motores y pasolas con piezas nuevas y usadas permitiéndoles a al repuesto tener el control absoluto de su empresa, permitiendo el registro de las distintas entidades con la que cuente dicha empresa.
 
 En conclusión, este sistema contiene los módulos de inicio de sesión, registros de usuarios, clientes,  proveedores, ventas, reportes y consultas.
@@ -27,15 +27,26 @@ En conclusión, este sistema contiene los módulos de inicio de sesión, registr
 
 Herramientas
 • Windows 10 64 bits.
+
 • Procesador: Procesador a 2.4 GHz.
+
 • Memoria RAM: 4 gigabyte (GB).
+
 • Espacio en disco duro: 170gigabyte (GB).
+
  Visual Studio C#
+
  SQL Server
+
  Paint
+
  Google Chrome
+
 Autores ✒️
+
 Jenry Cacerez Guzman- Trabajo Total
+
 Creador📄
+
  (Jenry Cacerez Guzman)
 
