@@ -1,7 +1,7 @@
 # proyecto-Final
 
 
-# Proyecto Final
+
 
 
 Este sistema está diseñado para ser utilizado Respuestos de Motores y pasolas con piezas nuevas y usadas permitiéndoles  al repuesto tener el control absoluto de su empresa, permitiendo el registro de las distintas entidades con la que cuente dicha empresa.
