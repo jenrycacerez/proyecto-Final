@@ -26,6 +26,7 @@ namespace ProyectoFinal_Jenry.BLL
                         var producto = prod.Buscar(item.ArticuloId);
                         producto.Cantidad -= item.Cantidad;
                         prod.Modificar(producto);
+
                     }
                     paso = db.SaveChanges() > 0;
                 }

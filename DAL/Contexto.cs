@@ -1,4 +1,6 @@
-﻿using ProyectoFinal_Jenry.Entidades;
+﻿
+using ProyectoFinal_Jenry.Entidades;
+
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -13,7 +15,7 @@ namespace ProyectoFinal_Jenry.DAL
         public DbSet<Usuarios> Usuarios { get; set; }
 
 
-        public DbSet<Articulos> Articulos { get; set; }
+        public DbSet<Articulos> Articulos  { get; set; }
        
         public DbSet<Proveedor> Proveedor { get; set; }
         public DbSet<Clientes> Clientes { get; set; }

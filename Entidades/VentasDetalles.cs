@@ -27,9 +27,7 @@ namespace ProyectoFinal_Jenry.Entidades
         public decimal Importe { get; set; }
         public decimal Total { get; set; }
 
-     //   [ForeignKey("ArticuloId")]
-     //   public virtual Articulos Articulo { get; set; }
-
+     
         public VentasDetalles()
         {
             VentaDetalleId = 0;
