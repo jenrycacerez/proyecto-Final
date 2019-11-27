@@ -55,18 +55,17 @@
             this.MarcatextBox = new System.Windows.Forms.TextBox();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.CantidadnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.AddProveedorbutton = new System.Windows.Forms.Button();
+            this.CantidadtextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.CostonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // ArticulotextBox
@@ -352,19 +351,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(159, 26);
             this.dateTimePicker1.TabIndex = 72;
             // 
-            // CantidadnumericUpDown
-            // 
-            this.CantidadnumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CantidadnumericUpDown.Location = new System.Drawing.Point(136, 236);
-            this.CantidadnumericUpDown.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
-            this.CantidadnumericUpDown.Size = new System.Drawing.Size(434, 26);
-            this.CantidadnumericUpDown.TabIndex = 73;
-            // 
             // Eliminarbutton
             // 
             this.Eliminarbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -440,13 +426,22 @@
             this.AddProveedorbutton.UseVisualStyleBackColor = false;
             this.AddProveedorbutton.Click += new System.EventHandler(this.AddProveedorbutton_Click);
             // 
+            // CantidadtextBox
+            // 
+            this.CantidadtextBox.Location = new System.Drawing.Point(136, 236);
+            this.CantidadtextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CantidadtextBox.Name = "CantidadtextBox";
+            this.CantidadtextBox.ReadOnly = true;
+            this.CantidadtextBox.Size = new System.Drawing.Size(436, 26);
+            this.CantidadtextBox.TabIndex = 74;
+            // 
             // rArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(615, 711);
-            this.Controls.Add(this.CantidadnumericUpDown);
+            this.Controls.Add(this.CantidadtextBox);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.MarcatextBox);
             this.Controls.Add(this.ModelotextBox);
@@ -483,7 +478,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.CodigonumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -520,6 +514,6 @@
         private System.Windows.Forms.TextBox MarcatextBox;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.NumericUpDown CantidadnumericUpDown;
+        private System.Windows.Forms.TextBox CantidadtextBox;
     }
 }

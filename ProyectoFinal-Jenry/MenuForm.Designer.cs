@@ -46,6 +46,7 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.registrosArticulosToolStripMenuItem,
             this.registrosClienteToolStripMenuItem,
             this.registroProveedorToolStripMenuItem,
-            this.registroUsuarioToolStripMenuItem});
+            this.registroUsuarioToolStripMenuItem,
+            this.registroInventarioToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(101, 29);
             this.registrosToolStripMenuItem.Text = "Registros";
@@ -80,28 +82,28 @@
             // registrosArticulosToolStripMenuItem
             // 
             this.registrosArticulosToolStripMenuItem.Name = "registrosArticulosToolStripMenuItem";
-            this.registrosArticulosToolStripMenuItem.Size = new System.Drawing.Size(266, 34);
+            this.registrosArticulosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registrosArticulosToolStripMenuItem.Text = "Registro Articulo";
             this.registrosArticulosToolStripMenuItem.Click += new System.EventHandler(this.RegistrosArticulosToolStripMenuItem_Click);
             // 
             // registrosClienteToolStripMenuItem
             // 
             this.registrosClienteToolStripMenuItem.Name = "registrosClienteToolStripMenuItem";
-            this.registrosClienteToolStripMenuItem.Size = new System.Drawing.Size(266, 34);
+            this.registrosClienteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registrosClienteToolStripMenuItem.Text = "Registros Cliente";
             this.registrosClienteToolStripMenuItem.Click += new System.EventHandler(this.RegistrosClienteToolStripMenuItem_Click);
             // 
             // registroProveedorToolStripMenuItem
             // 
             this.registroProveedorToolStripMenuItem.Name = "registroProveedorToolStripMenuItem";
-            this.registroProveedorToolStripMenuItem.Size = new System.Drawing.Size(266, 34);
+            this.registroProveedorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registroProveedorToolStripMenuItem.Text = "Registro Proveedor";
             this.registroProveedorToolStripMenuItem.Click += new System.EventHandler(this.RegistroProveedorToolStripMenuItem_Click);
             // 
             // registroUsuarioToolStripMenuItem
             // 
             this.registroUsuarioToolStripMenuItem.Name = "registroUsuarioToolStripMenuItem";
-            this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(266, 34);
+            this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
             this.registroUsuarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroUsuarioToolStripMenuItem_Click);
             // 
@@ -188,6 +190,13 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(33, 29);
             this.toolStripMenuItem1.Text = " ";
             // 
+            // registroInventarioToolStripMenuItem
+            // 
+            this.registroInventarioToolStripMenuItem.Name = "registroInventarioToolStripMenuItem";
+            this.registroInventarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.registroInventarioToolStripMenuItem.Text = "Registro Inventario";
+            this.registroInventarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroInventarioToolStripMenuItem_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -229,6 +238,7 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem registroInventarioToolStripMenuItem;
     }
 }
 

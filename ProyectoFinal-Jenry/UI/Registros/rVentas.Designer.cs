@@ -61,6 +61,7 @@
             this.Guardarbutton = new System.Windows.Forms.Button();
             this.Removerbutton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
+            this.DisponiblestextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DetalledataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDnumericUpDown)).BeginInit();
@@ -79,7 +80,7 @@
             this.DetalledataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.DetalledataGridView.BackgroundColor = System.Drawing.Color.White;
             this.DetalledataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DetalledataGridView.Location = new System.Drawing.Point(0, 34);
+            this.DetalledataGridView.Location = new System.Drawing.Point(0, 27);
             this.DetalledataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DetalledataGridView.Name = "DetalledataGridView";
             this.DetalledataGridView.ReadOnly = true;
@@ -176,7 +177,6 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(535, 679);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -215,7 +215,7 @@
             0,
             0});
             this.CantidadnumericUpDown.Name = "CantidadnumericUpDown";
-            this.CantidadnumericUpDown.Size = new System.Drawing.Size(340, 26);
+            this.CantidadnumericUpDown.Size = new System.Drawing.Size(243, 26);
             this.CantidadnumericUpDown.TabIndex = 49;
             this.CantidadnumericUpDown.Value = new decimal(new int[] {
             1,
@@ -433,6 +433,15 @@
             this.Buscarbutton.UseVisualStyleBackColor = false;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
+            // DisponiblestextBox
+            // 
+            this.DisponiblestextBox.Location = new System.Drawing.Point(483, 272);
+            this.DisponiblestextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DisponiblestextBox.Name = "DisponiblestextBox";
+            this.DisponiblestextBox.ReadOnly = true;
+            this.DisponiblestextBox.Size = new System.Drawing.Size(91, 26);
+            this.DisponiblestextBox.TabIndex = 71;
+            // 
             // rVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -440,6 +449,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(913, 943);
+            this.Controls.Add(this.DisponiblestextBox);
             this.Controls.Add(this.Imprimirbutton);
             this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.TotaltextBox);
@@ -515,5 +525,6 @@
         private System.Windows.Forms.DateTimePicker FechadateTimePicker;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
         private System.Windows.Forms.Button Imprimirbutton;
+        private System.Windows.Forms.TextBox DisponiblestextBox;
     }
 }

@@ -120,7 +120,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             ProductocomboBox.Text = null;
             PreciotextBox.Text = string.Empty;
             CantidadnumericUpDown.Value = 1;
-          //  DisponiblestextBox.Text = string.Empty;
+           DisponiblestextBox.Text = string.Empty;
             FechadateTimePicker.Value = DateTime.Now;
             ITBIStextBox.Text = string.Empty;
             SubtotaltextBox.Text = string.Empty;
@@ -135,6 +135,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             IDnumericUpDown.Value = v.VentaId;
             ClientecomboBox.Text = v.Cliente;
             CantidadnumericUpDown.Value = 1;
+            //DisponiblestextBox.Text = v.Cliente;
             FechadateTimePicker.Value = v.Fecha;
             ITBIStextBox.Text = v.Itbis.ToString();
             SubtotaltextBox.Text = v.Subtotal.ToString();
@@ -264,7 +265,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             if (p != null)
             {
                 PreciotextBox.Text = Convert.ToString(p.Precio);
-             // DisponiblestextBox.Text = Convert.ToString(p.Cantidad);
+              DisponiblestextBox.Text = Convert.ToString(p.Cantidad);
             }
         }
 
@@ -295,12 +296,12 @@ namespace ProyectoFinal_Jenry.UI.Registros
                         return;
                     }
                 }
-                /*
-               if (CantidadnumericUpDown.Value > Convert.ToInt32(DisponiblestextBox.Text))
+
+                if (CantidadnumericUpDown.Value > Convert.ToInt32(DisponiblestextBox.Text))
                 {
-                 MyErrorProvider.SetError(DisponiblestextBox, "No quedan disponibles.");
-                   return;
-               }*/
+                    MyErrorProvider.SetError(DisponiblestextBox, "No quedan disponibles.");
+                    return;
+                }
             }
 
             if (DetalledataGridView.DataSource != null)
@@ -324,16 +325,11 @@ namespace ProyectoFinal_Jenry.UI.Registros
             }
             ProductocomboBox.Text = null;
             PreciotextBox.Text = null;
-          //  DisponiblestextBox.Text = null;
+           DisponiblestextBox.Text = null;
             CargarGrid();
             CalcularItbis();
             CalcularSubtotal();
             CalcularTotal();
-        }
-
-        private void DisponiblestextBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)

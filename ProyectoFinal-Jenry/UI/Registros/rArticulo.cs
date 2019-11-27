@@ -65,7 +65,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             CodigonumericUpDown.Value = 0;
             ArticulotextBox.Text = null;
             ProveedorcomboBox.Text = null;
-            CantidadnumericUpDown.Value = 0;
+            CantidadtextBox.Text = null;
             MarcatextBox.Text = string.Empty;
             ModelotextBox.Text = string.Empty;
             PrecionumericUpDown.Value = 0;
@@ -89,7 +89,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             CodigonumericUpDown.Value = p.Codigo;
             ArticulotextBox.Text = p.Articulo;
             ProveedorcomboBox.Text = p.Proveedor;
-            CantidadnumericUpDown.Value = p.Cantidad;
+            CantidadtextBox.Text = p.Cantidad.ToString();
             MarcatextBox.Text = p.Marca;
             ModelotextBox.Text = p.Modelo;
             PrecionumericUpDown.Value = p.Precio;
@@ -105,7 +105,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             p.Codigo = Convert.ToInt32(CodigonumericUpDown.Value);
             p.Articulo = ArticulotextBox.Text;
             p.Proveedor = ProveedorcomboBox.Text;
-            p.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
+           // p.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
             p.Precio = PrecionumericUpDown.Value;
             p.Marca = MarcatextBox.Text;
             p.Modelo = ModelotextBox.Text;
@@ -203,11 +203,11 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 paso = false;
             }
 
-            if (CantidadnumericUpDown.Value == 0)
-            {
-                MyErrorProvider.SetError(CantidadnumericUpDown, "No puede ser 0.");
-                paso = false;
-            }
+          //  if (CantidadnumericUpDown.Value == 0)
+          //  {
+            //    MyErrorProvider.SetError(CantidadnumericUpDown, "No puede ser 0.");
+            //    paso = false;
+           // }
             if (string.IsNullOrWhiteSpace(MarcatextBox.Text))
             {
                 MyErrorProvider.SetError(MarcatextBox, "No puede ser vacio.");

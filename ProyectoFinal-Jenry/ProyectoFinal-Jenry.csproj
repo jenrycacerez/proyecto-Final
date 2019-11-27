@@ -122,6 +122,12 @@
     <Compile Include="UI\Registros\rClientes.Designer.cs">
       <DependentUpon>rClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\rInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rInventarios.Designer.cs">
+      <DependentUpon>rInventarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rClientes.resx">
       <DependentUpon>rClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rInventarios.resx">
+      <DependentUpon>rInventarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rProveedor.resx">
       <DependentUpon>rProveedor.cs</DependentUpon>

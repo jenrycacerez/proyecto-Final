@@ -139,5 +139,14 @@ namespace ProyectoFinal_Jenry
         {
           
         }
+
+        private void RegistroInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rInventarios r = new rInventarios(id);
+            r.MdiParent = this;
+            r.StartPosition = FormStartPosition.CenterScreen;
+            r.Show();
+
+        }
     }
 }
