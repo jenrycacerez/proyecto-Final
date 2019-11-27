@@ -12,12 +12,12 @@ administrador
 
 # Login
 
-Este Es El Login de mi proyecto donde Solo Puedo Entrar la primera vez con el Nombre de Usuaria del Administrado y su Contraseñar, Esta Me Valida si Mi Contraseña o mi Nombre De Usuario Esta Incorreto.
+Este es el Login de mi proyecto donde solo puedo Entrar la primera vez con el nombre de usuaria del administrado y su contraseñar, esta me valida si mi contraseña o mi nombre de usuario esta incorreto.
 
 <img width="150" alt="loging" src="https://user-images.githubusercontent.com/54563282/69565002-f572ff00-0fab-11ea-997b-06be91fd7868.png">
 
 # Menu
-Este es mi Menu pricipal Aqui Puedo Tener Acceso A los Registros y Consulta del Programa.
+Este es mi menu pricipal aqui puedo tener acceso a los registros, consulta y ventas del programa.
 
 <img width="400" alt="menug" src="https://user-images.githubusercontent.com/54563282/69565254-8053f980-0fac-11ea-916a-e8f7d4b19677.png">
 
