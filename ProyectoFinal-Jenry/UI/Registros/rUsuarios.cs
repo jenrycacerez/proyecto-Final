@@ -76,7 +76,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             else
                 MessageBox.Show("No encontrado.");
         }
-
+        
         public static bool RepetirUser(string descripcion)
         {
             bool paso = false;
@@ -130,6 +130,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             }
             return paso;
         }
+        
         private bool Validar()
         {
             bool paso = true;
