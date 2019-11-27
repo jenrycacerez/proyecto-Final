@@ -27,17 +27,17 @@ Aqui uno de Mis Registro, Este Especificamente Es el De Articulo Donde Le Doy En
 <img width="165" alt="articulosg" src="https://user-images.githubusercontent.com/54563282/69565307-9d88c800-0fac-11ea-9ece-f962add291ac.png">
 
 # Registro De Proveedores
-Aqui Otro De Mis Registros Este Me Agrega El provevedor Y Compañia Del Suplidor.
+Aqui otro de mis registros, este me agrega el provevedor Y nombre compañia del suplidor.
 
 <img width="150" alt="proveedorg" src="https://user-images.githubusercontent.com/54563282/69565366-be511d80-0fac-11ea-8e2e-516df2385401.png">
 
 # Registro De Cliente
-En Este Registro Agrego El Cliente Deseado Para Realizar La Venta.
+En este registro agrego el cliente deseado para realizar la venta.
 
 <img width="150" alt="registroc" src="https://user-images.githubusercontent.com/54563282/69565431-dde84600-0fac-11ea-975f-4dea8b8a4314.png">
 
 # Registro De Usuario
-El Registro De Usuario Crea El Nombre De Usuario y Contraseña Para Tener Acceso Al Login Despues De Aver Entrado Con El Usuario Del Administrador.
+El registro de usuario crea el nombre de usuario y contraseña para tener acceso al login despues de haber entrado con el usuario del administrador.
 
 <img width="150" alt="usuariog" src="https://user-images.githubusercontent.com/54563282/69565494-fbb5ab00-0fac-11ea-9eea-aef7b47acc02.png">
 
@@ -46,13 +46,6 @@ En Conclusión, Este Sistema Contiene Los Módulos de inicio de sesión, Registr
 
 
 # Herramientas Utilizadas 
-• Windows 10 64 bits.
-
-• Procesador: Procesador a 2.4 GHz.
-
-• Memoria RAM: 4 gigabyte (GB).
-
-• Espacio en disco duro: 170gigabyte (GB).
 
  Visual Studio C#
 
@@ -61,6 +54,16 @@ En Conclusión, Este Sistema Contiene Los Módulos de inicio de sesión, Registr
  Paint
 
  Google Chrome
+
+• Windows 10 64 bits.
+
+• Procesador: Procesador a 2.4 GHz.
+
+• Memoria RAM: 4 gigabyte (GB).
+
+• Espacio en disco duro: 170gigabyte (GB).
+
+
 
 # Autor De Este Proyecto ✒️
 
