@@ -42,7 +42,7 @@ El registro de usuario crea el nombre de usuario y contraseña para tener acceso
 <img width="150" alt="usuariog" src="https://user-images.githubusercontent.com/54563282/69565494-fbb5ab00-0fac-11ea-9eea-aef7b47acc02.png">
 
 # Conclusion
-En Conclusión, Este Sistema Contiene Los Módulos de inicio de sesión, Registros Re Usuarios, clientes,  proveedores, ventas, reportes y consultas.
+En conclusión, este sistema contiene los módulos de inicio de sesión, registros de usuarios, clientes,  proveedores, ventas, reportes y consultas.
 
 
 # Herramientas Utilizadas 
