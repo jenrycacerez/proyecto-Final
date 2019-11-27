@@ -105,7 +105,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             p.Codigo = Convert.ToInt32(CodigonumericUpDown.Value);
             p.Articulo = ArticulotextBox.Text;
             p.Proveedor = ProveedorcomboBox.Text;
-           // p.Cantidad = Convert.ToInt32(CantidadnumericUpDown.Value);
+          
             p.Precio = PrecionumericUpDown.Value;
             p.Marca = MarcatextBox.Text;
             p.Modelo = ModelotextBox.Text;
@@ -203,11 +203,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 paso = false;
             }
 
-          //  if (CantidadnumericUpDown.Value == 0)
-          //  {
-            //    MyErrorProvider.SetError(CantidadnumericUpDown, "No puede ser 0.");
-            //    paso = false;
-           // }
+          
             if (string.IsNullOrWhiteSpace(MarcatextBox.Text))
             {
                 MyErrorProvider.SetError(MarcatextBox, "No puede ser vacio.");

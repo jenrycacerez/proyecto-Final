@@ -114,7 +114,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                     Email = "Jenrybrown@hotmail.com",
                     FechaCreacion = DateTime.Now
                 });
-               // MetroFramework.MetroMessageBox.Show(this, "Al no existir usuario(s) se ha creado uno por defecto.", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+              
                 return;
                 
             }

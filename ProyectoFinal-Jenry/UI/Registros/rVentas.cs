@@ -20,8 +20,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
         public rVentas(int id)
         {
             InitializeComponent();
-         //  Cliente();
-          //  Articulo();
+         
             this.id = id;
             Detalle = new List<VentasDetalles>();
             Cliente();
@@ -135,7 +134,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             IDnumericUpDown.Value = v.VentaId;
             ClientecomboBox.Text = v.Cliente;
             CantidadnumericUpDown.Value = 1;
-            //DisponiblestextBox.Text = v.Cliente;
+            
             FechadateTimePicker.Value = v.Fecha;
             ITBIStextBox.Text = v.Itbis.ToString();
             SubtotaltextBox.Text = v.Subtotal.ToString();
@@ -240,8 +239,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
                 MessageBox.Show("Guardado", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("No fue posible guardar", "Rafa Motor", MessageBoxButtons.OK, MessageBoxIcon.Error);
-           // Factura r = new Factura(Detalle);
-           // r.ShowDialog();
+           
             Limpiar();
         }
 
@@ -352,9 +350,7 @@ namespace ProyectoFinal_Jenry.UI.Registros
             else
             {
 
-              //  var listado = new List<VentasDetalles>();
-               // RepositorioBase<VentasDetalles> rListado = new RepositorioBase<VentasDetalles>();
-                //listado = rListado.GetList(p => true);
+             
                FormularioFacturas frm = new FormularioFacturas(Detalle);
                 frm.ShowDialog();
             }

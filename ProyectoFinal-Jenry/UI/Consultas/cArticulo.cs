@@ -66,9 +66,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                         case "Proveedor":
                             listado = r.GetList(p => p.Proveedor.Contains(CriteriotextBox.Text));
                             break;
-                        //case "Seccion":
-                         //   listado = r.GetList(p => p.Seccion.Contains(CriteriotextBox.Text));
-                           // break;
+                       
                         case "Precio":
                             decimal parse3;
                             if (!decimal.TryParse(CriteriotextBox.Text, out parse3))
@@ -131,7 +129,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                             break;
 
                     }
-                   // listado = listado.Where(c => c.Vencimiento.Date >= DesdedateTimePicker.Value.Date && c.Vencimiento.Date <= HastadateTimePicker.Value.Date).ToList();
+                 
                 }
                 else
                 {
@@ -148,7 +146,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
                         }
                     }
                     listado = r.GetList(p => true);
-                  //  listado = listado.Where(c => c.Vencimiento.Date >= DesdedateTimePicker.Value.Date && c.Vencimiento.Date <= HastadateTimePicker.Value.Date).ToList();
+                  
                 }
                 Lista = listado;
                 ConsultadataGridView.DataSource = listado;
@@ -291,9 +289,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             }
             else
             {
-               // var listado = new List<Articulos>();
-               // RepositorioBase<Articulos> rListado = new RepositorioBase<Articulos>();
-              //  listado = rListado.GetList(p => true);
+              
                 FormularioArticulos frm = new FormularioArticulos(Lista);
                 frm.ShowDialog();
             }

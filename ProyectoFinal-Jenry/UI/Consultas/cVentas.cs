@@ -214,9 +214,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             }
             else
             {
-               // var listado = new List<Ventas>();
-              //  RepositorioBase<Ventas> rListado = new RepositorioBase<Ventas>();
-              //  listado = rListado.GetList(p => true);
+               
                 FormularioVentas frm = new FormularioVentas(Lista);
                 frm.ShowDialog();
             }

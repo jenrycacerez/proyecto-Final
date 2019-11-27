@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89855892-A017-4BD9-AFE1-1F648AF2CF24}</ProjectGuid>
+    <ProjectGuid>{1ABD3F6F-D685-4C38-8B83-9CCCB7FD74BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLLTests</RootNamespace>
-    <AssemblyName>BLLTests</AssemblyName>
+    <RootNamespace>BLLTests1</RootNamespace>
+    <AssemblyName>BLLTests1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -74,11 +74,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{0aa28d35-4db2-4ca9-af2a-acd6d798c873}</Project>
+      <Project>{0AA28D35-4DB2-4CA9-AF2A-ACD6D798C873}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{613f3776-8778-4de5-bca6-009f67be6e10}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{78fde3e4-1ff7-4e9d-ad00-d988db4c84db}</Project>
+      <Project>{78FDE3E4-1FF7-4E9D-AD00-D988DB4C84DB}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>

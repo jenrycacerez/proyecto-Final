@@ -160,9 +160,7 @@ namespace ProyectoFinal_Jenry.UI.Consultas
             }
             else
             {
-               // var listado = new List<Usuarios>();
-               // RepositorioBase<Usuarios> rListado = new RepositorioBase<Usuarios>();
-                //listado = rListado.GetList(p => true);
+              
                 FormularioUsuarios frm = new FormularioUsuarios(Lista);
                 frm.ShowDialog();
             }
