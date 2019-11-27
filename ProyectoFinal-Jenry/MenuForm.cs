@@ -148,5 +148,13 @@ namespace ProyectoFinal_Jenry
             r.Show();
 
         }
+
+        private void ColsulatasDeInventariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cInventarios c = new cInventarios();
+            c.MdiParent = this;
+            c.StartPosition = FormStartPosition.CenterScreen;
+            c.Show();
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.registrosClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colsultasDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,7 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colsulatasDeInventariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,6 +108,13 @@
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
             this.registroUsuarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroUsuarioToolStripMenuItem_Click);
             // 
+            // registroInventarioToolStripMenuItem
+            // 
+            this.registroInventarioToolStripMenuItem.Name = "registroInventarioToolStripMenuItem";
+            this.registroInventarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.registroInventarioToolStripMenuItem.Text = "Registro Inventario";
+            this.registroInventarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroInventarioToolStripMenuItem_Click);
+            // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -114,7 +122,8 @@
             this.consultasToolStripMenuItem1,
             this.consultasDeProveedoresToolStripMenuItem,
             this.consultasDeClientesToolStripMenuItem,
-            this.consultasDeArticulosToolStripMenuItem});
+            this.consultasDeArticulosToolStripMenuItem,
+            this.colsulatasDeInventariosToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(105, 29);
             this.consultasToolStripMenuItem.Text = "Consultas";
@@ -190,12 +199,12 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(33, 29);
             this.toolStripMenuItem1.Text = " ";
             // 
-            // registroInventarioToolStripMenuItem
+            // colsulatasDeInventariosToolStripMenuItem
             // 
-            this.registroInventarioToolStripMenuItem.Name = "registroInventarioToolStripMenuItem";
-            this.registroInventarioToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.registroInventarioToolStripMenuItem.Text = "Registro Inventario";
-            this.registroInventarioToolStripMenuItem.Click += new System.EventHandler(this.RegistroInventarioToolStripMenuItem_Click);
+            this.colsulatasDeInventariosToolStripMenuItem.Name = "colsulatasDeInventariosToolStripMenuItem";
+            this.colsulatasDeInventariosToolStripMenuItem.Size = new System.Drawing.Size(322, 34);
+            this.colsulatasDeInventariosToolStripMenuItem.Text = "Colsulatas De Inventarios";
+            this.colsulatasDeInventariosToolStripMenuItem.Click += new System.EventHandler(this.ColsulatasDeInventariosToolStripMenuItem_Click);
             // 
             // MenuForm
             // 
@@ -239,6 +248,7 @@
         private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem registroInventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colsulatasDeInventariosToolStripMenuItem;
     }
 }
 

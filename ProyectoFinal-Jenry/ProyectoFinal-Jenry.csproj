@@ -86,6 +86,12 @@
     <Compile Include="UI\Consultas\cClientes.Designer.cs">
       <DependentUpon>cClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Consultas\cInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cInventarios.Designer.cs">
+      <DependentUpon>cInventarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Consultas\cProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,12 @@
     <Compile Include="UI\Reporte\FormularioFacturas.Designer.cs">
       <DependentUpon>FormularioFacturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reporte\FormularioInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reporte\FormularioInventario.Designer.cs">
+      <DependentUpon>FormularioInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Reporte\FormularioProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
     </Compile>
     <Compile Include="UI\Reporte\FormularioVentas.Designer.cs">
       <DependentUpon>FormularioVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Reporte\ListadoInventario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoInventario.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="UI\Reporte\rptArticulos.cs">
       <AutoGen>True</AutoGen>
@@ -238,6 +256,9 @@
     <EmbeddedResource Include="UI\Consultas\cClientes.resx">
       <DependentUpon>cClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\cInventarios.resx">
+      <DependentUpon>cInventarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Consultas\cProveedor.resx">
       <DependentUpon>cProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +295,9 @@
     <EmbeddedResource Include="UI\Reporte\FormularioFacturas.resx">
       <DependentUpon>FormularioFacturas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reporte\FormularioInventario.resx">
+      <DependentUpon>FormularioInventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\FormularioProveedor.resx">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +306,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\FormularioVentas.resx">
       <DependentUpon>FormularioVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reporte\ListadoInventario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ListadoInventario.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reporte\rptArticulos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
